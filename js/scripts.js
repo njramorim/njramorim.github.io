@@ -182,7 +182,7 @@ var itens = [
 		texto2: '[html/css/js/responsivo]'
 	},
 	{
-		link:'http://planetadeleitores.com.br/dist/',
+		link:'http://planetadeleitores.com.br/app/',
 		imagem: 'images/pics/leitores.jpg',
 		texto: 'Hotsite Planeta de Leitores',
 		texto2: '[html/css/js]'
