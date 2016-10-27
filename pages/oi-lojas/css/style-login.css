@@ -1,0 +1,559 @@
+@font-face{ 
+	font-family: 'orator';
+	src: url('../css/oratorpr-webfont.eot');
+	src: url('../css/oratorpr-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../css/oratorpr-webfont.woff') format('woff'),
+	     url('../css/oratorpr-webfont.ttf') format('truetype'),
+	     url('../css/oratorpr-webfont.svg#webfont') format('svg');
+}
+
+
+/*---------------------RESET CSS---------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-decoration:none;
+	color:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration:none;color:none;} a:visited{text-decoration:none; color:none;} a:active{text-decoration:none;color:none;}
+
+
+
+
+body{
+background: #f7f7f7;
+
+}
+
+
+/*---------------------header---------------------*/
+
+#black-header{
+width: 100%;
+height:40px;
+background: #42484d;
+}
+
+
+
+#header2{
+width: 100%;
+height:26px;
+background: url(../img/header2-bg.jpg) repeat-x;
+}
+
+
+
+.header2-menu {
+width:942px;
+margin: 0 auto;
+}
+
+.header2-menu a, .header2-menu a:active, .header2-menu a:hover{
+text-decoration:none;
+color:#42484d;
+}
+
+.header2-menu li {
+padding-right:9px;
+padding-left:9px;
+border-left:1px solid #ffffff;
+border-right:1px solid #a3abb2;
+display:inline;
+margin-left:0px;
+list-style:inline;
+font-family:orator;
+color:#42484d;
+font-size:11px;
+line-height:13px;
+text-align:right;
+margin-top:8px;
+float: right;
+}
+
+.ie8 .header2-menu li {
+border-left:0px solid #ffffff;
+}
+
+.ie7 .header2-menu li {
+border-left:0px solid #ffffff;
+}
+
+.header2-menu li:first-child {
+border-right:none;
+padding-right:0px;
+}
+
+
+.header2-menu li:last-child {
+border-left:none;
+}
+
+
+#roxo-header{
+width: 100%;
+height:90px;
+background: #7577c0;
+margin-bottom:37px;
+}
+
+.titulo-roxo-header{
+width:942px;
+margin:0 auto;
+}
+
+.titulo-roxo-header p{
+font-family:orator;
+color:white;
+font-size:42px;
+float:right;
+margin-top:24px;
+text-align:right;
+width:447px;
+line-height:25px;
+}
+
+.ie .titulo-roxo-header p{
+font-family:orator;
+color:white;
+font-size:42px;
+float:right;
+margin-top:24px;
+text-align:right;
+width:480px;
+line-height:25px;
+}
+
+.ie7 .titulo-roxo-header p{
+font-family:orator;
+color:white;
+font-size:32px;
+float:right;
+margin-top:34px;
+text-align:right;
+width:480px;
+line-height:32px;
+}
+
+.login-black-header{
+width:942px;
+margin: 0 auto;
+}
+
+.get-username-login-black{
+float:right;
+color:#90989e;
+font-family:verdana;
+font-weight:regular;
+font-size:12px;
+margin-top:18px;
+
+}
+
+.icon-login-black{
+float:right;
+margin-top:8px;
+margin-right:41px;
+}
+
+.sair-login-black{
+float: left;
+margin-left:901px;
+margin-top:-24px;
+background: url(../img/btn-login-black-sair.jpg);
+width:41px;
+height:22px;
+border:none;
+}
+
+.sair-login-black:hover{background: url(../img/btn-login-black-sair2.jpg);}
+
+.sair-login-black:active{background: url(../img/btn-login-black-sair3.jpg);}
+
+.logo-oi-header {
+margin: 0 auto;
+width:942px;
+height:102px;
+background: url(../img/logo-oi-header.png) no-repeat;
+background-position: left top;
+margin-top:-170px;
+margin-bottom: 68px;
+}
+/*--------------------------fim header--------------------*/
+
+
+/*---------      RESOLUTION       desde 500PX----------------------------*/
+@media only screen and (min-width: 500px){
+.titulo-box{
+font-family: arial;
+font-weight: bold;
+font-size: 1.250em;
+color: #747a7e;
+margin-top:21px;
+margin-bottom:19px;
+margin-left:19px;
+}
+
+
+/*-----------------------WRAPPER CONTEUDO---------------------*/
+
+#conteudo-wrapper{
+margin: 0 auto;
+
+height:100%;
+}
+
+/*-------------------fim wrapper conteudo--------------------*/
+
+/*-------------------------------------------------------------/
+
+
+/*-------------------BOX GERAL INTRO----------------------*/
+
+.box-geral-intro{
+
+width:485px;
+height: 212px;
+background: #f2f2f2;
+margin:0 auto;
+border: 1px;
+border-style: solid;
+border-color: #cccccc;
+border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+padding-bottom:20px;
+margin-top:87px;
+ box-sizing: none;
+    -moz-box-sizing: none;
+margin-bottom:30px;	
+}
+
+.faixa-branca-sup-box-intro{
+background: #ffffff;
+color: #ffffff;
+height:1px;
+width:477px;
+margin: 0 auto;
+}
+
+.faixa-cinza-sup-box-intro{
+background: #dedede;
+color: #dedede;
+height:1px;
+width:445px;
+margin: 0 auto;
+}
+
+.usuario-intro{
+width:189px;
+height:21px;
+font-family:verdana;
+font-weight: regular;
+font-size:0.750em;
+color:#747a7e;
+padding-left:5px;
+float:left;
+margin-top:54px;
+margin-left:54px;
+outline:none;
+border:1px solid #cccccc;
+}
+
+.ie8 .usuario-intro{
+line-height:21px;
+}
+
+.senha-intro{
+width:129px;
+height:21px;
+font-family:verdana;
+font-weight: regular;
+font-size:0.750em;
+color:#747a7e;
+padding-left:5px;
+float:left;
+margin-top:54px;
+margin-left:10px;
+outline:none;
+border:1px solid #cccccc;
+}
+
+.ie8 .senha-intro{
+line-height:21px;
+}
+
+.ok-intro-btn{
+width:23px;
+height:23px;
+font-family:verdana;
+font-weight: regular;
+font-size:0.688em;
+color:#868c91;
+background: url('../img/btn-login-ok.png');
+margin-top:55px;
+margin-left:9px;
+outline:none;
+border:none;
+
+}
+ 
+.ok-intro-btn:hover{background: url('../img/btn-login-ok2.png');} .ok-intro-btn:active{background: url('../img/btn-login-ok3.png');}
+
+
+
+.texto-bot-box-intro{
+font-size: 0.625em;
+color: #747a7e ;
+font-family:verdana;
+margin: 0 auto;
+margin-top:49px;
+height:30px;
+text-align:center;
+}
+
+.texto-bot-box-intro a{
+color: #747a7e ;
+
+}
+
+
+
+/*-----------------fim box geral intro-------------------------*/
+
+/*-------------------------------------------------------------*/
+
+
+}
+/*-----------------fim   RESOLUTION      desde 500px-------------------------*/
+
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+
+
+
+
+/*---------      RESOLUTION       ATE     499PX----------------------------*/
+@media only screen and (max-width: 499px) {
+
+.titulo-box{
+font-family: arial;
+font-weight: bold;
+font-size: 1.250em;
+color: #747a7e;
+margin-top:21px;
+margin-bottom:19px;
+
+text-align:center;
+}
+
+
+/*-----------------------WRAPPER CONTEUDO---------------------*/
+
+#conteudo-wrapper{
+margin: 0 auto;
+
+height:100%;
+}
+
+/*-------------------fim wrapper conteudo--------------------*/
+
+/*-------------------------------------------------------------/
+
+
+/*-------------------BOX GERAL INTRO----------------------*/
+
+.box-geral-intro{
+
+width:300px;
+height: 212px;
+background: #f2f2f2;
+margin:0 auto;
+border: 1px;
+border-style: solid;
+border-color: #cccccc;
+border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+padding-bottom:20px;
+margin-top:87px;
+ box-sizing: none;
+    -moz-box-sizing: none;
+margin-bottom:30px;		
+}
+
+.faixa-branca-sup-box-intro{
+background: #ffffff;
+color: #ffffff;
+height:1px;
+width:98%;
+margin: 0 auto;
+}
+
+.faixa-cinza-sup-box-intro{
+background: #dedede;
+color: #dedede;
+height:1px;
+width:90%;
+margin: 0 auto;
+}
+
+.usuario-intro{
+width:189px;
+height:21px;
+font-family:verdana;
+font-weight: regular;
+font-size:0.750em;
+color:#747a7e;
+padding-left:5px;
+float:left;
+margin-top:34px;
+margin-left:54px;
+outline:none;
+border:1px solid #cccccc;
+}
+
+.ie8 .usuario-intro{
+line-height:21px;
+}
+
+.senha-intro{
+width:159px;
+height:21px;
+font-family:verdana;
+font-weight: regular;
+font-size:0.750em;
+color:#747a7e;
+padding-left:5px;
+float:left;
+margin-top:5px;
+margin-left:54px;
+outline:none;
+border:1px solid #cccccc;
+}
+
+
+
+.ok-intro-btn{
+width:23px;
+height:23px;
+font-family:verdana;
+font-weight: regular;
+font-size:0.563em;
+color:#868c91;
+background: url('../img/btn-login-ok.png');
+margin-top:65px;
+margin-left:-23px;
+outline:none;
+border:none;
+}
+
+.iphone  .ok-intro-btn{
+margin-top:67px;
+height:28px;
+}
+ 
+.iphone  .ok-intro-btn{
+margin-top:67px;
+
+background: url('../img/btn-login-okb.png');
+}
+ 
+.iphone .ok-intro-btn:hover{background:url('../img/btn-login-okb2.png');} .iphone .ok-intro-btn:active{background: url('../img/btn-login-okb3.png');}
+
+.ok-intro-btn:hover{background:url('../img/btn-login-ok2.png');} .ok-intro-btn:active{background: url('../img/btn-login-ok3.png');}
+
+.texto-bot-box-intro{
+font-size: 0.625em;
+color: #747a7e ;
+font-family:verdana;
+margin: 0 auto;
+margin-top:39px;
+height:30px;
+text-align:center;
+}
+
+.ie9 .texto-bot-box-intro{
+width:225px;
+margin-left:45px;
+}
+
+.ie10 .texto-bot-box-intro{
+width:225px;
+margin-left:45px;
+}
+
+.texto-bot-box-intro a{
+color: #747a7e ;
+
+}
+
+.bot-box-intro-box-separa{
+
+}
+
+
+/*-----------------fim box geral intro-------------------------*/
+
+/*-------------------------------------------------------------*/
+
+
+}
+/*-----------------fim   RESOLUTION      ate 360px-------------------------*/
+span.button input.form-submit {  
+ -webkit-border-radius: 0px;  
+ -webkit-appearance: none;  
+} 
+
+input{
+ -webkit-border-radius: 0px;  
+ -webkit-appearance: none;  
+
+}
+
+
+

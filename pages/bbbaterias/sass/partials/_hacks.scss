@@ -1,0 +1,54 @@
+
+//mozilla
+@-moz-document url-prefix() { 
+	header.do-fix > nav ul li a::before {
+		transform: scale(0.7);
+	}
+	header.do-fix > nav ul li:first-child a::before,
+	header.do-fix > nav ul li:last-child a::before{
+		top: 2px;
+		left:15px;
+	}
+	header.do-fix > nav ul li:nth-child(3) a::before,
+	header.do-fix > nav ul li:nth-child(4) a::before{
+		top:3px;
+		left:15px;
+	}
+	header.do-fix > nav ul li:nth-child(2) a::before{
+		top:5px;
+		left:15px;
+	}
+}
+
+
+//ie
+.ie{
+
+}
+.ie11, .ie10, .ie9{
+	header > nav ul li:last-child, 
+	header > nav ul li:last-child a{
+		color: $White;
+	}
+	header.do-fix > nav ul li:first-child a::before,
+	header.do-fix > nav ul li:last-child a::before{
+		top: 7px;
+	}
+	header.do-fix > nav ul li:nth-child(2) a::before,
+	header.do-fix > nav ul li:nth-child(3) a::before,
+	header.do-fix > nav ul li:nth-child(4) a::before{
+		top:11px;
+		left:25px;
+	}
+}
+.ie10{ 
+
+}
+.ie9{
+
+}
+
+.ie8{
+
+}
+

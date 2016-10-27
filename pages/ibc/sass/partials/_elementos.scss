@@ -1,0 +1,2415 @@
+//icones
+@mixin icoSprite{
+	background-image: url('../images/icons/sprites-icons.png');
+}
+@mixin icoSetaDown{
+	@include icoSprite;
+	width:16px;
+	height:16px;
+	background-position: -15px 0px;
+}
+@mixin icoSetaDown2{
+	background-position: -69px 0px;
+}
+@mixin icoMais{
+	@include icoSprite;
+	background-position: -51px 0px;
+	width:15px;
+	height:15px;
+}
+@mixin icoSetaTorta{
+	@include icoSprite;
+	background-position: -148px -21px;
+	width:199px;
+	height:46px;
+}
+@mixin icoSetaCarroLeft{
+	@include icoSprite;
+	background-position: -73px -19px;
+	width:36px;
+	height:74px;
+}
+@mixin icoEstrelas{
+	@include icoSprite;
+	background-position:-130px 0px;
+	width:17px;
+	height:12px;
+}
+@mixin icoEstrelas2{
+	@include icoEstrelas;
+	background-position:-114px 0px;
+}
+//sociais
+@mixin icoShare{
+	@include icoSprite;
+	background-position:-80px -285px;
+	width:17px;
+	height:17px;
+}
+@mixin icoShare2{
+	background-position:-97px -285px;
+}
+
+//textos
+.textTitulo{
+	width:100%;
+	color: $White;
+	font-size:$fontTitulo;
+	text-align:center;
+	text-transform:uppercase;
+	padding-bottom:20px;
+	border-bottom:1px dashed $Mercury;
+	margin-bottom:30px;
+	&.bigger{
+		font-size: $fontTituloMaior;
+	}
+	&.smaller{
+		font-weight:600;
+		font-size: $fontTituloMenor;
+	}
+}
+
+hr{
+	background: transparent;
+	border-top: 1px dashed $Mercury;
+	margin-bottom:40px;
+}
+
+.textPadrao{
+	width:74%;
+	margin:0 13%;
+	color: $DoveGray;
+	font-size: $fontPadrao - 1px;
+	line-height: $fontTituloMenor + 2px;
+	text-align:center;
+	margin-bottom:40px;
+}
+
+.textDestaque{
+	margin-top:7px;
+	color:$CloudBurst;
+	font-weight:600;
+	font-size: $fontPadrao + 2px;
+	text-align:center;
+	text-transform:uppercase;
+	span{
+		color: $Eden;
+	}
+}
+
+//buttons e anchors
+@mixin buttonAzul{
+	text-transform:uppercase;
+	text-align:center;
+	color:$White;
+	font-size: $fontPadrao - 1px;
+	font-weight: 600;
+	background: $CloudBurst;
+	border:0px;
+	cursor:pointer;
+	@include border-radius (4px);
+	@include transition ($tranAll);
+	&:hover{
+		background: $Eden;
+	}
+	&:active{
+		background: darken($Eden, 5%);
+	}
+}
+
+.breadCrumb{
+	margin-top:20px;
+	margin-bottom:60px;
+	span{
+		color: $DoveGray;
+		font-size:$fontPadrao;
+		margin-right:13px;
+		a{
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+		&:before{
+			content:'>';
+			margin-right:15px;
+		}
+		&:first-child{
+			&:before{
+				display:none;
+			}
+		}
+	}
+}
+
+//forms e inputs
+form{
+	padding:30px;
+	@include border-radius (4px);
+	display:inline-block;
+	text-transform:uppercase;
+	.textTitulo{
+		color: $Scooter;
+		font-weight: 300;
+	}
+	input, textarea{
+		width:100%;
+		height:40px;
+		border:1px solid $White;
+		background: $Tuna;
+		padding:10px;
+		color:$White;
+		font-size:$fontPadrao - 1px;
+		font-weight:300;
+		text-transform: inherit;
+		margin-bottom:15px;
+		@include border-radius (4px);
+		@include box-shadow ($sombraSemFocus);
+		@include transition ($tranAll);
+		&:focus{
+			@include box-shadow ($sombraFocus);
+		}
+	}
+	textarea{
+		height: 80px;
+		resize: none;
+	}
+	button, input[type=button]{
+		position:relative;
+		width:100%;
+		height:50px;
+		line-height:50px;
+		cursor:pointer;
+		background:$BuddhaGold;
+		@include border-radius (4px);
+		color: $White;
+		font-weight:600;
+		font-size:$fontPadrao + 2px;
+		text-align: left;
+		padding:0 0 0 20px ;
+		text-transform: inherit;
+		border:0px;
+		@include border-radius (4px);
+		@include box-shadow ($sombraSemFocus);
+		@include transition ($tranAll);
+		&:after{
+			content:'';
+			position:absolute;
+			@include icoSetaDown;
+			@include transform-origin (center);
+			@include rotate (-90);
+			margin:15px 0px 0px 8px;
+			@include transition ($tranAll);
+		}
+		&:focus{
+			@include box-shadow ($sombraFocus);
+		}
+		&:hover{
+			background: darken($BuddhaGold, 2.5%);
+		}
+		&:active{
+			&:after{
+				margin:15px 0px 0px 10px;
+			}
+		}
+	}
+}
+form.blueForm{
+	display:block;
+	select{
+		width:330px;
+		height:43px;
+		background: $AthensGray;
+		border:1px solid $CloudBurst;
+		@include border-radius (4px);
+		margin:0px;
+		padding-left: 10px;
+		background-position: 0 0;
+		line-height: 41px;
+		font-size: $fontPadrao - 1px;
+		color: $CloudBurst;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		text-align:left;
+		text-transform:uppercase;
+		vertical-align:top;
+		& + select{
+			margin-left:10px;
+		}
+	}
+	button, input[type=button]{
+		@include buttonAzul;
+		width:100px;
+		height:43px;
+		line-height:43px;
+		display:inline-block;
+		margin-left:10px;
+		padding:0px;
+		background-image:none;
+		vertical-align:top;
+		&:after, &:before{
+			display:none;
+		}
+	}
+}
+
+form.newsLetter{
+	padding:0px;
+	color: $White;
+	input, p, label, button{
+		display:inline-block;
+		margin-bottom:0px;
+	}
+	p{
+		font-weight: 300;
+		font-size: $fontTituloMenor - 2px;
+		text-align:left;
+		margin-right:25px;
+		b{
+			font-weight: 600;	
+		}
+	}
+	input[type=text], input[type=email]{
+		background: $CloudBurst;
+		color: $BuddhaGold;
+		padding:0px 20px;
+		font-size: $fontPadrao;
+		font-weight: 400;
+		margin-right:20px;
+	}
+	span{
+		font-weight:300;
+		font-size: $fontPadrao - 1px;
+	}
+	input[type=text]{
+		width:198px;
+	}
+	input[type=email]{
+		width:232px;
+	}
+	input[type=radio]{
+		display:none;
+	}
+	label{
+		font-weight:600;
+		padding-left:60px;
+		margin-left:20px;
+		cursor:pointer;
+		vertical-align: middle;
+		position:relative;
+		&:before{
+			content:'';
+			position:absolute;
+			display:block;
+			top:0;
+			left:0;
+			width:51px;
+			height:20px;
+			background-image: url('../images/icons/checkbox.png');
+			background-position:0px 0px;
+			background-repeat:no-repeat;
+		}
+		& + input + label:before{
+			background-position:0px -21px;
+		}
+	}
+	input[type=radio]:checked + label{
+		&:after{
+			content:'';
+			position:absolute;
+			display:block;
+			left:0;
+			top:0;
+			width:22px;
+			height:21px;
+			background-image: url('../images/icons/checkarrow.png');
+			background-repeat:no-repeat;
+		}
+	}
+	button{
+		width:144px;
+		vertical-align: middle;
+		height:41px;
+		margin:0 0 0 30px;
+		font-size: $fontPadrao + 2px;
+		font-weight: 400;
+		line-height:41px;
+		padding-left:10px;
+		&:after{
+			margin: 12px 0px 0px 7px;
+		}
+		&:active:after{
+			margin: 12px 0px 0px 10px;
+		}
+	}
+}
+//sections
+header{
+	h1, span.logo{
+		display:inline-block;
+		width:190px;
+		height:69px;
+		margin-top:18px;
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			text-indent:-9999px;
+			background-image: url('../images/icons/logo-icons.png');
+			background-repeat: no-repeat;
+			background-position:-2px -147px; 
+		}
+	}
+	ul.topo{
+		float:right;
+		right:0;
+		display:block;
+		margin:0 auto;
+		li{
+			font-size:$fontPadrao;
+			display:inline-block;
+			text-transform:uppercase;
+			font-weight:600;
+			color: $White;
+			height:39px;
+			vertical-align:top;
+			padding-top:10px;
+			position:relative;
+			margin-left:30px;
+			a{
+				vertical-align:middle;
+				&:hover{
+					@include opacity (0.85);
+					@include transition ($tranAll);
+				}
+				&:before{
+					content:'';
+					background-image: url('../images/icons/sprites-icons.png');
+					background-repeat: no-repeat;
+					position:absolute;
+					display:block;
+					margin-top:4px;
+				}
+			}
+			&:first-child{
+				margin-left:0px;
+				color: $Eden;
+				font-weight:700;
+				b{
+					color:$Elephant;
+					font-size:$fontPadrao + 2;
+					font-weight:700;
+				}
+				a::before{
+					width:13px;
+					height:13px;
+					background-position:0px 0px;
+					margin-left:-16px;
+				}
+			}
+			&:last-child{
+				color: $Elephant;
+				font-size:$fontPadrao - 1;
+				margin-left:30px + 14px + 7px;
+				a::before{
+					width:14px;
+					height:17px;
+					background-position: -34px 0px;
+					margin-left: -(14px + 7px);
+					margin-top:0px;
+				}
+			}
+			&:nth-child(2){
+				font-size:$fontPadrao - 1;
+				background: $CloudBurst;
+				@include border-radius (0px 0px 4px 4px);
+				@include transition ($tranDesce);
+				cursor:pointer;
+				padding-top:0px;
+				span{
+					width:170px;
+					height:39px;
+					display:block;
+					padding:0px 17px;
+					a{
+						padding-top:10px;
+						display:block;
+					}
+				}
+				a::before{
+					@include icoSetaDown;
+					float:right;
+					right:18px;
+					margin-top:2px;
+				}
+				&.do-ativo{
+					margin-top:500px;
+					a::before{
+						@include flipY;
+					}
+				}
+			}
+		}
+	}
+}
+
+nav{
+	background:$CloudBurst;
+	position:absolute;
+	width:100%;
+	height:50px;
+	bottom:0;
+	ul{
+		width: $width-fix;
+		padding:0px 10px;
+		margin: 0 auto;
+	}
+	li{
+		color: $White;
+		padding:0px 5px 0px 6px;
+		display:inline-block;
+		height:50px;
+		position:relative;
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			left:0;
+			background: $Rhino;
+			width:1px;
+			height:17px;
+			margin-top:  (50px - (17px + 4px)) / 2;
+		}
+		&:first-child{
+			&:before{
+				display:none;
+			}
+			a{
+				padding-right:40px;
+				@include border-radius (2px 2px 0px 0px);
+				&:after{
+					content:'';
+					display:block;
+					position:absolute;
+					@include icoSetaDown;
+					right:13px;
+					top:13px;
+				}
+				&:hover{
+					&:after{
+						@include icoSetaDown2;
+					}
+				}
+			}
+		}	
+	}
+	li a{
+		font-size: $fontPadrao - 1;
+		display:block;
+		height:40px;
+		line-height:40px;
+		margin-top:4px;
+		text-transform:uppercase;
+		background: transparent;
+		padding:0 15px;
+		position:relative;
+		@include border-radius (2px);
+		@include transition ($tranMenu);
+		&:hover{
+			background: $Eden;
+		}
+		&.do-ativo{
+			background: $Eden;
+			&:after{
+				@include icoSetaDown2;
+			}
+		}
+	}
+	li{
+		ul{
+			position:absolute;
+			width:420px;
+			padding:0;
+			height:0px;
+			background: $Eden;
+			overflow:hidden;
+			@include transition (0s);
+				li{
+					height: auto;
+					margin-bottom:3px;
+					margin-left:-5px;
+					display:block;
+					@include opacity (0);	
+					@include transition (inherit);
+					&:before, &:after{
+						display:none;
+					}
+					a{
+						font-size: $fontPadrao - 2;
+						line-height: $fontPadrao ;
+						height: auto;
+						padding:5px 8px !important;
+						display:inline-block;
+						width:auto;
+						@include border-radius (4px !important);
+						&:after{
+							display:none !important;
+						}
+						&:hover{
+							background: $CloudBurst;
+						}
+					}
+				}
+		}
+		&:hover{
+			ul{
+				height:250px;
+				padding:20px 10px;
+				@include transition ($tranDelay);
+				li{
+					@include opacity (1);
+					@include transition ($tranDelay2);
+				}
+			}
+		}
+	}
+}
+
+section.centraisAtendimento{
+	width:100%;
+	text-transform:uppercase;
+	background: $CloudBurst;
+	.width-fix{
+		padding-top:30px;
+	}
+	ul{
+		margin-left:80px;
+		display:inline-block;
+		vertical-align: top;
+		& + ul{
+			margin-left:60px;
+		}
+	}
+	li{
+		font-size:12px;
+		color: $White;
+		margin-bottom:10px;
+		width:210px;
+		a{
+			display:block;
+			@include opacity (1);
+			@include transition ($tranAll);
+			&:hover{
+				@include opacity (0.85);
+			}
+		}
+		b{
+			font-weight:400;
+			float:right;
+			right:0;
+		}
+	}
+	form{
+		width:320px;
+		height:336px;
+		background:$Martinique;
+		margin-left:65px;
+		vertical-align:top;
+		.textTitulo{
+			font-size: $fontTituloMenor;
+			padding-bottom:10px;
+			margin-bottom:16px;
+		}
+	}
+}
+
+.menuMobile{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:auto;
+	min-height:77px;
+	background-color: $Rhino;
+	border-top:	3px solid $CloudBurst;
+	z-index:7;
+	@include opacity (1);
+	@include transition ($tranAll);
+	&.do-none{
+		@include opacity (0);
+	}
+	section{
+		height:0;
+		overflow:hidden;
+		@include transition ($tranAll);
+		div.width-fix{
+			@include opacity (0);
+			@include transition ($tranAll);
+		}
+		&.do-ativo{
+			height:500px;
+			margin-bottom:77px;
+			div.width-fix{
+				@include opacity (1);
+				@include transition ($tranDelay);
+			}
+		}
+		span.close{
+			position:absolute;
+			display:block;
+			cursor:pointer;
+			color: $White;
+			background: transparent;
+			text-transform:uppercase;
+			font-size: $fontPadrao + 1px;
+			font-weight: bold;
+			text-align:center;
+			border:1px solid $White;
+			@include border-radius (50%);
+			width:27px;
+			height:27px;
+			line-height:27px;
+			right:10px;
+		}
+	}
+	nav{
+		background:transparent;
+		height:77px;
+		& > ul.geral{
+			padding-left:250px;
+			position:relative;
+			> a{
+				position:absolute;
+				display:block;
+				width:137px;
+				height:51px;
+				background-image: url('../images/icons/logo-mobile.png');
+				background-repeat:no-repeat;
+				text-indent:-9999px;
+				cursor:pointer;
+				left:10px;
+				top:(77px - 51px) / 2;
+				margin-top:-3px;
+			}
+		}
+		li{
+			vertical-align:top;
+			margin-top:14px;
+			position:relative;
+			&:before{
+				background: $White;
+				height:17px;
+			}
+			a{
+				line-height: $fontPadrao + 3px;
+				vertical-align:middle;
+				text-align:center;
+				padding:0 25px;
+				padding-top:3px;
+			}
+			&:nth-child(7){
+				a{
+					line-height:40px;
+					padding-top:0px;
+				}
+			}
+			&.open{
+				position:absolute;
+				right:10px;
+				padding:0;
+				a{
+					margin-top:7px;
+					cursor:pointer;
+					display:block;
+					text-indent:-9999px;
+					width:217px;
+					height:34px;
+					background: url('../images/icons/solicitar.jpg');
+				}
+				&:before{
+					display:none;
+				}
+			}
+			ul li{
+				margin-top:0px;
+				margin-bottom:3px;
+				a{
+					font-size: $fontPadrao - 1px ;
+					line-height: $fontPadrao + 1px;
+				}
+				&:first-child{
+				
+				}
+				&:last-child a{
+					line-height: $fontPadrao + 1px;
+				}
+			}
+		}
+		a + li{
+			&:before{
+				display:none;
+			}
+			a{
+				padding:4px 40px 0 20px;
+				&:after{
+					content:'';
+					display:block;
+					position:absolute;
+					@include icoSetaDown;
+					right:14px;
+					top:13px;
+				}
+				&:hover, &.do-ativo{
+					&:after{
+						@include icoSetaDown2;
+					}
+				}
+			}
+		}
+	}
+}
+
+aside.compartilhar{
+	position:fixed;
+	float:left;
+	left:-100px;
+	top:50%;
+	margin-top:-68px;
+	width:100px;
+	height:312px;
+	background: $AthensGray;
+	border:1px solid $Silver;
+	@include border-radius (0px 0px 4px 0px);
+	@include transition ($tranAll);
+	z-index:15;
+	button{
+		position:relative;
+		width:43px;
+		height:136px;
+		background: $CloudBurst;
+		border:1px solid $Silver;
+		border-left: 1px solid $AthensGray;
+		margin-left:97px;
+		margin-top:-1px;
+		cursor:pointer;
+		@include border-radius (0px 4px 4px 0px);
+		@include transition ($tranAll);
+		&:before{
+			content:'';
+			@include icoShare;
+			display: block;
+			position: absolute;
+			bottom: 5px;
+			left: 13px;
+		}
+		&:after{
+			content:'compartilhe';
+			display:block;
+			color: $White;
+			font-size: $fontPadrao;
+			text-transform:uppercase;
+			@include transform-origin (center);
+			@include rotate (-90);
+			@include transition (none);
+			margin-top:57px;
+		}
+		&:hover{
+			background: lighten($CloudBurst, 5%);
+		}
+	}
+	&.do-ativo{
+		left:0;
+		button{
+			background: $Paradiso;
+			&:before{
+				@include icoShare2;
+			}
+			&:hover{
+				background: lighten($Paradiso, 5%);
+			}
+		}
+	}
+}
+
+.destaqueSec ~ section .textTitulo{
+	color: $CloudBurst;
+}
+
+div.destaque{
+	min-width:$width-fix;
+	width:100%;
+	height:430px;
+	background: url('../images/pics/home-bg.jpg');
+	background-size:2000px 430px;
+	background-position:center;
+	z-index:1;
+	&:after{
+		content:'';
+		display:block;
+		width:100%;
+		height:102px;
+		background: $Mercury;
+	}
+	div.width-fix{
+		height:100%;
+		background-image: url('../images/pics/pessoa-home-bg.png');
+		background-size:331px 398px;
+		background-position:left bottom;
+		background-repeat: no-repeat;
+		div{
+			margin-top:70px;
+			margin-left:320px;
+			position:absolute;
+		}
+	}
+	.textTitulo{
+		color:$CloudBurst;
+		width:545px;
+		text-align:left;
+		line-height: $fontTituloMaior;
+		border-bottom:1px dashed $CloudBurst;
+		p{
+			font-size: $fontTituloMenor;
+			line-height: $fontTituloMenor + 3px;
+			margin-top: 20px;
+			text-transform:none;
+		}
+	}
+	ul{
+		margin-left:50px;
+		li{
+			color: $CloudBurst;
+			font-size:$fontPadrao +2px;
+			text-align:left;
+			padding-left:24px;
+			display:block;
+			margin-bottom:10px;
+			position:relative;
+			&:before{
+				content:'';
+				display:block;
+				position:absolute;
+				@include icoMais;
+				left:0;
+				top:3px;
+			}
+		}
+	}
+	b{
+		position:absolute;
+		left:26px;
+		bottom:-80px;
+		color:$CloudBurst;
+		font-size: $fontTituloMenor + 1px;
+		line-height: $fontTituloMenor + 8px;
+		font-weight:400;
+		&:first-line{
+			font-weight:700;
+			font-size:$fontTitulo;
+		}
+		&:after{
+			content:'';
+			position:absolute;
+			@include icoSetaTorta;
+			top:0;
+			right: -(200px + 45px);
+		}
+	}
+	form{
+		float:right;
+		position:absolute;
+		right:30px;
+		margin-top:20px;
+		width:320px;
+		height:auto;
+		background: $CloudBurst;
+		.textTitulo{
+			width:100%;
+			&:first-line{
+				color:$Scooter;
+				font-size: $fontTitulo;
+			}
+			color: $White;
+			font-size: $fontTituloMaior - 5px;
+			line-height: $fontTitulo + 10px;
+			font-weight:300;
+			text-align:center;
+			border-bottom:1px dashed $Tuna;
+			margin-bottom:20px;
+		}
+	}
+}
+
+
+
+
+div.carrossel{
+	margin:0 30px 60px;
+	position:relative;
+	overflow:hidden;
+	button{
+		text-indent:-9999px;
+		@include icoSetaCarroLeft;
+		cursor:pointer;
+		display:inline-block;
+		vertical-align:middle;
+		float:left;
+		left:0;	
+		cursor:pointer;
+		background-color: transparent;
+		border:0px;
+		@include opacity (1);
+		@include user-select(none);
+		@include transition ($tranAll);
+		&+button{
+			float:right;
+			left:initial;
+			right:0;
+			@include flipX;
+		}
+		&.do-disable{
+			@include opacity (0.5);
+			cursor:none;
+			pointer-events: none;
+		}
+	}
+	ul{
+		width:1050px;
+		//background:black;
+		overflow:hidden;
+		display:inline-block;
+		margin-left:40px;
+		vertical-align:middle;
+	}
+	li{
+		display:inline-block;
+	}
+	&.imgCarro{
+		height: 260px;
+		div{
+			width: calc(110% + 260px + 40px);
+			height:260px;
+		}
+		button{
+			margin-top: (260px - 74px) /2;
+		}
+		li{
+			margin-left:50px;
+			height:100%;
+			vertical-align: top;
+			&:first-child{
+				margin-left:0px;
+			}
+		}
+		figure{
+			width:222px;
+			height:100%;
+			cursor:pointer;
+		}
+		img{
+			width:100%;
+			height:156px;
+		}
+		figcaption{
+			width:100%;
+			height:104px;
+			overflow:hidden;
+			background: $AthensGray;
+			padding:40px 10px 15px;
+			color: $CloudBurst;
+			text-align:center;
+			position:relative;
+			@include transition ($tranAll);
+			span{
+				font-size:$fontPadrao;
+				font-weight:600;
+				text-transform:uppercase;
+				display:block;
+				height:50px;
+				@include transition ($tranAll);
+				& + span{
+					margin-top:104px;
+					font-size: $fontPadrao - 3px;
+					line-height: $fontPadrao + 4px;
+					height:75px;
+					text-transform:none;
+				}
+			}
+			&:before{
+				content:'';
+				@include icoSetaDown;
+				position:absolute;
+				top:15px;
+				left:100px;
+				@include transition ($tranAll);
+			}
+		}
+		li:hover{
+			figcaption{
+				background:$Mercury2; 
+				padding:20px 10px 20px;
+				&:before{
+					margin-top:-80px;
+				}
+				span{
+					margin-top:-80px;
+					& + span{
+						margin-top:30px;
+					}
+				}
+			}
+		}
+		li.bigger{
+			figcaption::after{
+				content:'';
+				bottom:15px;
+				left:100px;
+				position:absolute;
+				@include opacity (0);
+				@include icoSetaDown;
+				@include icoSetaDown2;
+				@include transition (none);
+			}
+			&:hover{
+				figcaption{
+					height:260px;
+					margin-top:-156px;
+					&:after{
+						@include opacity (1);
+						@include transition ($tranDelay);
+					}
+				}
+			}
+		}
+	}
+	&.turmasCarro{
+		margin-top:30px;
+		height:210px;
+		div{
+			width: calc(110% + 240px + 30px);
+			height:210px;
+		}
+		button{
+			margin-top: (210px - 74px) /2;
+		}
+		li{
+			width:240px;
+			height:210px;
+			padding:20px;
+			border:1px solid $Silver;
+			vertical-align:top;
+			margin-left:30px;
+			position:relative;
+			&:first-child{
+				margin-left:0px;
+			}
+		}
+		a{
+			@include buttonAzul;
+			width:130px;
+			height:33px;
+			line-height:33px;
+			margin-left:33px;
+			display:block;
+			position:absolute;
+			bottom:20px;
+			padding:0;
+		}
+		p{
+			width:100%;
+			text-align:center;
+			color: $Eden;
+			font-size:$fontPadrao - 1px; 
+			font-weight:700;
+			text-transform:uppercase;
+			display:block;
+			margin-bottom:5px;
+			& + p{
+				color: $CloudBurst;
+				text-transform:none;
+				margin-bottom:18px;
+				span{
+					color: $Eden;
+				}
+				& ~ p{
+					margin-bottom:2px;
+				}	
+			}
+		}
+	}
+	&.depoCarro{
+		margin-bottom:70px;
+		ul{
+			height:240px;
+		}
+		button{
+			zoom: 0.7;
+			@include opacity (0.5);
+			margin-top: 120px;
+			&.do-disable{
+				@include opacity (0.25);
+			}
+		}
+		div{
+			height:100%;
+			width: calc(110% + 530px);
+		}
+		li{
+			display:inline-block;
+			height:100%;
+			width:530px;
+			padding:10px 40px;
+			vertical-align:top;
+			color: $DoveGray;
+			font-size: $fontPadrao - 1px;
+			line-height: $fontTituloMenor + 2px;
+			text-align: center;
+			border-left:1px solid $Mercury;
+			&:first-child{
+				border-left:0px;
+			}
+		}	
+		blockquote{
+			font-weight:400;
+			margin-bottom:30px;
+			overflow:hidden;
+			height:115px;
+		}
+		p{
+			margin-bottom:10px;
+			display:block;
+			span{
+				@include icoEstrelas;
+				display:inline-block;
+				background-repeat: repeat;
+				&:first-child{
+					margin-left:5px;
+				}	
+			}
+			&.four{
+				span{
+					&:last-child{
+						@include icoEstrelas2;
+					}
+				}
+			}
+			&.three{
+				span{
+					&:last-child, &:nth-child(4){
+						@include icoEstrelas2;
+					}
+				}
+			}
+			&.two{
+				span{
+					&:last-child, &:nth-child(3), &:nth-child(4){
+						@include icoEstrelas2;
+					}
+				}
+			}
+			&.one{
+				span{
+					&:last-child, &:nth-child(2), &:nth-child(3), &:nth-child(4){
+						@include icoEstrelas2;
+					}
+				}
+			}
+		}
+		b{
+			font-weight:600;
+			display:block;
+			margin-bottom:-5px;
+		}
+		i{
+			font-style: italic;
+		}	
+	}
+}
+
+ul.cidadesLista{
+	margin-top:30px;
+	li{
+		color:$CloudBurst;
+		font-size: $fontPadrao - 1px;
+		padding:0px 20px;
+		height:33px;
+		line-height:33px;
+		text-transform:uppercase;
+		display:inline-block;
+		position:relative;
+		border-left:1px solid $CloudBurst;
+		&:first-child{
+			border-left:0px;
+			padding-left:15px;
+		}
+		&:last-child{
+			border-left:0px;
+			margin-left:30px;
+			padding:0px; 
+		}
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			padding-left:20px;
+			position:relative;
+			@include transition ($tranAll);
+			&:before{
+				content:'';
+				@include icoSprite;
+				background-position:-88px 0px;
+				width:14px;
+				height:18px;
+				position:absolute;
+				left:0;
+				top:6px;
+				vertical-align:middle;
+				@include transition ($tranAll);
+			}
+			&:hover{
+				color: $Eden;
+				&:before{
+					top:3px;
+				}
+			}
+		}
+	}
+	form {
+		padding:0px;
+		select{
+			width:228px;
+			vertical-align:middle;
+		}
+	}
+}
+
+div.videosList{
+	margin-bottom:70px;
+	a.button{
+		@include buttonAzul;
+		width:170px;
+		height:33px;
+		line-height:33px;
+		display:block;
+		margin:0 auto 35px;
+	}
+	li{
+		display:inline-block;
+		&:first-child{
+			width:498px;
+			height:342px;
+			background: $Silver;
+			float:left;
+			left:0;
+			iframe{
+				width:498px;
+				height:342px;
+			}
+		}
+		& ~ li{
+			width:250px;
+			height:170px;
+			margin-left:2px;
+			margin-bottom:1px;
+			position:relative;
+			vertical-align: top;
+			cursor:pointer;
+			&:nth-child(n+5){
+				margin-bottom:0px;
+				margin-top:1px;
+				vertical-align: bottom;
+			}
+			figure{
+				width:100%;
+				height:100%;
+				position:relative;
+				img{
+					width:100%;
+					height:100%;
+					z-index:1;
+				}
+				figcaption{
+					color: $White;
+					font-weight:600;
+					font-size:$fontPadrao;
+					position:absolute;
+					left:10px;
+					bottom:8px;
+					z-index:2;
+					i{
+						display:block;
+					}
+				}
+				&:before{
+					content:'';
+					position:absolute;
+					top:0;
+					left:0;
+					width:100%;
+					height:100%;
+					background: rgba($Black, 0.4);
+					@include transition ($tranAll);
+				}
+				&:hover{
+					&:before{
+						background:rgba($Black, 0);
+					}
+				}
+			}
+			&.do-ativo{
+				cursor:none;
+				@include user-select (none);
+				pointer-events: none;
+				&:before{
+					content:'';
+					position:absolute;
+					@include icoSprite;
+					background-position: 0px -19px;
+					width:69px;
+					height:69px;
+					margin:0 auto;
+					z-index:3;
+					left:88px;
+					top:50px;
+				}
+			}
+		}
+	}
+}
+
+section.corporativo{
+	width:100%;
+	height:755px;
+	background-image: url('../images/pics/home-bg2.jpg');
+	background-size: 1993px 755px;
+	background-position:center;
+	padding-bottom:0px;
+	padding-top:40px;
+	div.width-fix{
+		background-image: url('../images/pics/pessoas-home-bg2.png');
+		height:100%;
+		overflow:visible;
+		background-size: 692px 497px;
+		background-repeat:no-repeat;
+		background-position:left bottom;
+	}
+	.textTitulo{
+		margin-bottom:20px;
+		padding-bottom:15px;
+	}
+	.textDestaque{
+		margin-bottom:15px;
+	}
+	.textPadrao{
+		width:94%;
+		margin:0 3%;
+	}
+	form{
+		float:right;
+		right:100px;
+		vertical-align:top;
+		height:458px;
+		width:320px;
+		background: $Sisal;
+		padding:20px 30px;
+		position:absolute;
+		display:inline-block;
+		margin-top:40px;
+		input, textarea{
+			background: $White;
+			border:1px solid $Napa;
+			color: $Napa;
+		}
+		.textTitulo{
+			&:first-line{
+				font-weight:400;
+				font-size:$fontTitulo;
+			}
+			font-weight:300;
+			font-size: $fontTitulo - 1px;
+			color: $ClayCreek;
+			line-height: $fontTitulo + 2px;
+			border-bottom: 1px dashed #3d3d48;
+		}
+	}
+}
+
+.clientsBox{
+	width:618px;
+	height:458px;
+	display:inline-block;
+	padding:50px 80px 60px;
+	@include border-radius (4px);
+	background: rgba($White, 0.7);
+	margin-left:100px;
+	margin-top:40px;
+	.button{
+		@include buttonAzul;
+		height:33px;
+		line-height:33px;
+		width:194px;
+		display:block;
+		margin:50px auto 0;
+	}
+	ul{
+		width:458px;
+		margin-top:10px;
+	}
+	li{
+		width:139px;
+		height:57px;
+		background-color: $White;
+		border:1px solid $Sisal;
+		margin-left:20px;
+		margin-top:10px;
+		display:inline-block;
+		@include border-radius (4px);
+		background-image: url();
+		position:relative;
+		&:first-child, &:nth-child(3n + 1){
+			margin-left:0px;
+		}
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+}
+
+.duasColunas{
+	width:1046px;
+	margin:0 auto;
+	li{
+		width:(1046 / 2) + px;
+		height:175px;
+		overflow:hidden;
+		display:inline-block;
+		position:relative;
+		padding-left:120px;
+		margin-top:60px;
+		vertical-align:top;
+		&:before{
+			content:'';
+			position:absolute;
+			top:0;
+			left:0;
+			@include icoSprite;
+			width:92px;
+			height:92px;
+		}
+		&:nth-child(odd){
+			padding-right:20px;
+		}
+		&:nth-child(even){
+			padding-left:140px;
+			&:before{
+				left:20px;
+			}
+		}
+		&:first-child::before{
+			background-position:0px -94px;
+		}
+		&:nth-child(2)::before{
+			background-position:0px -190px;
+		}
+		&:nth-child(3)::before{
+			background-position:-96px -94px;
+		}	
+		&:nth-child(4)::before{
+			background-position:-96px -190px;
+		}
+		&:nth-child(5)::before{
+			background-position:-192px -94px;
+		}
+		&:nth-child(6)::before{
+			background-position:-192px -190px;
+		}	
+	}
+	h3{
+		color: $CloudBurst;
+		font-weight: 600;
+		font-size: $fontPadrao + 1px;
+		line-height: $fontPadrao + 1px;
+		text-transform:uppercase;
+		margin-bottom:10px;
+	}
+	p{
+		
+		font-weight: 400;
+		font-size: $fontPadrao;
+		line-height: $fontTituloMenor + 2px;
+		color: $DoveGray;
+	}
+	a{
+		@include buttonAzul;
+		margin:0 auto;
+		display:block;
+		width:494px;
+		height:43px;
+		line-height:43px;
+		margin-top:40px;
+	}
+	& + .duasColunas{
+		border-top:1px solid $Silver;
+		margin-top:50px;
+		margin-bottom:40px;
+		width:1224px;
+		li{
+			height:320px;
+			width: (1224 / 2) + px;
+			border-left:1px solid  $Silver;
+			padding:60px 20px 0;
+			margin-top:0;
+			&:before{
+				display:none;
+			}
+			&:first-child{
+				border-left:0px;
+			}
+		}
+		h3, p{
+			text-align: center;
+		}
+		a{
+			width:105px;
+			height:28px;
+			line-height:28px;
+			margin:33px auto;
+		}
+		img{
+			width:130px;
+			height:74px;
+			border:1px solid  $Silver;
+			display:inline-block;
+			margin-left:10px;
+		}
+	}
+}
+.blogNews{
+	width:100%;
+	padding:0px 60px 30px;
+	li{
+		margin-left:40px;
+		display:inline-block;
+		overflow:hidden;
+		border-bottom:1px dashed  $Silver;
+		margin-top:25px;
+		width:340px;
+		height:108px;
+		padding-bottom:20px;
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			@include opacity (1);
+			@include transition ($tranAll);
+			&:hover{
+				@include opacity (0.8);
+			}
+		}
+		img{
+			width:125px;
+			height:88px;			
+			border:1px solid $Silver;
+			float:left;
+		}
+		span{
+			display:block;
+			margin-bottom:5px;
+			margin-top:-3px;
+			color: $DoveGray;
+			font-weight:600;
+			font-size: $fontPadrao;
+			vertical-align: top;
+			float:right;
+			width:195px;
+		}
+		p{
+			display:inline-block;
+			color: $CloudBurst;
+			font-weight:600;
+			font-size:$fontPadrao + 1px;
+			line-height: $fontPadrao + 1px + 4px;
+			float:right;
+			width:195px;
+		}
+		&:nth-child(n+4){
+			height:78px;
+			img{
+				width:95px;
+				height:58px;
+				display:inline-block;
+			}
+			span, p{
+				width:225px;
+			}	
+		}
+		&:nth-child(n+7){
+			border-bottom:0px;
+		}
+	}
+}
+
+.destaqueSec ~ section.preFooter{
+	background: $Rhino;
+	padding-top:30px;
+	height:625px;
+	.textTitulo{
+		color: $White;
+		padding-top:0px;
+	}
+	ul{
+		margin-left:55px;
+	}
+	form{
+		width:320px;
+		height:432px;
+		background: $CloudBurst;
+		.textTitulo{
+			color: $Scooter;
+			font-size: $fontTitulo - 4px;
+			border-bottom-color: #3d3d48;
+		}
+	}
+}
+
+ul.siteMap{
+	display:inline-block;
+	width:290px;
+	vertical-align:top;
+	margin-left:20px;
+	margin-bottom:50px;
+	p{
+		color: $White;
+		font-size: $fontPadrao;
+		text-transform:uppercase;
+		margin-top:20px;
+		margin-bottom:15px;
+	}
+	li{
+		color: $PigeonPost;
+		font-size: $fontPadrao;
+		margin-bottom:5px;
+		display:block;
+		a{
+			@include transition ($tranAll);
+			&:before{
+				content:'› ';
+			}
+			&:hover{
+				color: lighten($PigeonPost, 10%);
+			}
+		}
+	}
+}
+
+.borderBox{
+	padding:15px;
+	border:1px solid $Fiord;
+	@include border-radius (4px);
+	margin-left:20px;
+	display:inline-block;
+	vertical-align:top;
+	overflow:hidden;
+	position:relative;
+	height:145px;
+	.fb-like-box{
+		margin-top: -40px;
+		&:before, &:after{
+			content:'';
+			display:block;
+			position:absolute;
+			width:100%;
+			height: 40px;
+			top: 20px;
+			left: 0;
+			z-index: 2;
+			background: $CloudBurst;
+		}
+		&:after{
+			content:'IBC Coaching';
+			color: $White;
+			font-family: arial;
+			font-size: $fontPadrao + 1px;
+			font-weight:bold;
+			text-transform:uppercase;
+			padding-left: 75px;
+			padding-top: 10px;
+			height:30px;
+			top: 30px;
+			border:0px;
+		}
+	}
+	.fb-like {
+		position: absolute;
+	    top: 12px;
+	    left: 24px;
+	    background: $CloudBurst;
+		z-index:3;
+		&:after{
+		  content: '';
+		  position: absolute;
+		  display: block;
+		  top: 115px;
+		  left: -10px;
+		  width: 500px;
+		  height: 50px;
+		   background: $CloudBurst;
+		}
+	}
+	p{
+		color: $White;
+		font-size: $fontPadrao;
+		text-transform:uppercase;
+	}
+	p.google{
+		position:relative; 
+		padding:0 45px 0 86px; 
+		margin-top:20px;
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			left:0;
+			width:60px;
+			height:60px;
+			background-image: url('../images/icons/logo-icons.png');
+			background-position:-197px -147px;
+		}
+		& + div{
+			position:absolute;
+			 top: 65px;
+			left: 102px;
+		}
+	}
+}
+
+.jrmBusto{
+	display:inline-block;
+	margin-left:30px;
+	padding:0 20px;
+	border-bottom:3px solid $SanMarino;
+	position:relative;
+	width:358px;
+	height:142px + 3px;
+	vertical-align: top;
+	a{
+		display:block;
+		position:relative;
+		height:100%;
+		width:100%;
+		color: $White;
+		font-size: $fontPadrao + 3px;
+		line-height: $fontPadrao + 5px;
+		text-transform:uppercase;
+		span{
+			color: $SanMarino;
+		}
+	}
+	a::before{
+		content:'';
+		position:absolute;
+		top:0;
+		left:0;
+		background-image: url('../images/icons/logo-icons.png');
+		background-position:-53px 0;
+		width:318px;
+		height:142px;
+	}
+
+}
+
+ul.socialLinks{
+	display:inline-block;
+	vertical-align: top;
+	li{
+		margin-left:10px;
+		display:inline-block;
+	}
+	a{
+		display:block;
+		text-indent:-9999px;
+		background: $CloudBurst;
+		@include border-radius (50%);
+		width:31px;
+		height:31px;
+		border:2px solid $Fiord;
+		vertical-align: middle;
+		position:relative;
+		@include transition ($tranAll);
+		&:before{
+			content:'';
+			position:absolute;
+			display:block;
+			margin:0 auto;
+			@include icoSprite;
+		}
+		&:hover{
+			background: $Fiord;
+			border: 2px solid $CloudBurst;
+		}
+	}	
+	a[alt=facebook]::before{
+		background-position: 0px -285px;
+		width:9px;
+		height:17px;
+		left:8px;
+		top:5px;
+	}
+	a[alt=gPlus]::before{
+		background-position: -11px -285px;
+		width:10px;
+		height:17px;
+		left:8px;
+		top:5px;
+	}	
+	a[alt=instagram]::before{
+		background-position: -28px -285px;
+		width:15px;
+		height:16px;
+		left:6px;
+		top:5px;
+	}
+	a[alt=linkedin]::before{
+		background-position: -44px -285px;
+		width:15px;
+		height:15px;
+		left:6px;
+		top:5px;
+	}
+	a[alt=twitter]::before{
+		background-position: -61px -285px;
+		width:15px;
+		height:13px;
+		left:7px;
+		top:7px;
+	}	
+}
+
+
+.carrosselDots{
+	width:824px;
+	height: 327px;
+	display:inline-block;
+	border-bottom:3px solid $SanJuan;
+	margin-right:38px;
+	overflow:hidden;
+	position:relative;
+	background: $SanJuan;
+	button{
+		z-index:3;
+		position:relative;
+		margin-left:5px;
+		margin-top:295px;
+		padding:0px;
+		width:12px;
+		height:12px;
+		background: $White;
+		cursor:pointer;
+		border:0px;
+		@include border-radius (50%);
+		&:hover{
+			background: lighten($SanJuan, 15%);
+		}
+		&.do-ativo{
+			background: $SanJuan;
+		}
+		&.primeiro{
+			margin-left:700px;
+		}
+	}
+	figure{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:-1;
+		@include opacity (0);
+		@include transition ($tranAll);
+		img{
+			width:100%;
+			height:100%;
+			@include transition ($tranAll);
+		}
+		figcaption{
+			position:absolute;
+			width:100%;
+			height:155px;
+			bottom:0;
+			padding:20px 40px;
+			background: rgba($Black, 0.4);
+			span{
+				display:inline-block;
+				color:$SanJuan;				
+				font-size: $fontPadrao - 1px;
+				padding:2px 11px;
+				background: $White;
+			}
+			b{
+				display:block;
+				margin-top:15px;
+				margin-bottom:5px;
+				color: $White;
+				font-weight:800;
+				font-size: $fontTituloMenor + 3px;
+				text-transform:uppercase;
+				width:630px;
+			}
+			p{
+				display:block;
+				color: $White;
+				font-size: $fontPadrao + 3px;
+				width:630px;
+			}
+		}
+		&.do-ativo{
+			z-index:1;
+			@include opacity (1);
+		}
+	}
+	&:hover{
+		figure img{
+			width:110%;
+			margin-left:-5%;
+			height:110%;
+		}
+	}
+}
+
+.propaganda{
+	vertical-align:top;
+	display:inline-block;
+	&.horizontal{
+		margin:70px 0 0;
+	}
+	&.noMargin{
+		margin:0px 0 50px;
+	}
+	&.lessMargin{
+		margin:-30px 0 50px;
+	}
+}
+
+
+.boxNormal{
+	width:100%;
+	li{
+		width:295px;
+		height:326px;
+		background:$Alabaster;
+		overflow:hidden;
+		@include border-radius (4px);
+		margin-left:32px;
+		display:inline-block;
+		@include transition ($tranAll);
+		&:first-child{
+			margin-left:0px;
+		}
+		a{
+			display:block;
+		}
+		img{
+			width:100%;
+			height:194px;
+			border-bottom:3px solid $SanJuan;
+			@include transition ($tranAll);
+		}
+		span{
+			display:inline-block;
+			margin:20px 20px 10px 20px;
+			padding:0px 10px;
+			height:21px;
+			background: $Scooter;
+			line-height:21px;
+			color: $White;
+			font-size:$fontPadrao - 1px;
+			font-weight:bold;
+			text-align:center;
+		}
+		p{
+			margin:0px 20px 20px 20px;
+			color: $CloudBurst;
+			font-size: $fontTituloMenor - 2px;
+			font-weight:bold;
+		}
+		&:hover{
+			background: darken($Alabaster, 10%);
+			img{
+				@include opacity (0.8);
+			}
+		}
+	}
+}
+.colunistas{
+	width:100%;
+	li{
+		display:inline-block;
+		width:302px;
+		height:105px;
+		margin-left:20px;
+		overflow:hidden;
+		position:relative;
+		@include transition ($tranAll);
+		&:first-child{
+			margin-left:0px;
+		}
+		a{
+			display:block;
+		}
+		img{
+			@include border-radius (50%);
+			width:97px;
+			height:97px;
+			border:4px solid $White;
+			box-sizing:content-box;
+			display: inline-block;
+			position:absolute;
+			left:0;
+			top:0;
+			@include transition ($tranAll);
+		}
+		span{
+			display:inline-block;
+			margin-top:25px;
+			margin-left:115px;
+			font-weight:800;
+			font-size:$fontPadrao + 2px;
+			color: $CloudBurst;
+			margin-bottom:5px;
+		}
+		p{
+			display:inline-block;
+			margin-left:115px;
+			color: $DoveGray;
+			font-weight:600;
+			font-size: $fontPadrao - 1px;
+		}
+		&:hover{
+			img{
+				border:4px solid $Alto;
+			}
+		}
+	}
+}
+@mixin boxGeralPortal{
+	width:410px;
+	height:115px;
+	display:block;
+	position:relative;
+	margin-bottom:40px;
+	overflow:hidden;
+	@include transition ($tranAll);
+	a{
+		display:block;
+		width:100%;
+		height:100%;
+	}
+	img{
+		width:195px;
+		height:115px;
+		@include border-radius (4px);
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	span{
+		display:inline-block;
+		color: $CloudBurst;
+		font-weight:bold;
+		font-size: $fontPadrao;
+		margin-left:203px;
+		margin-top:10px;
+		margin-bottom:5px;
+	}
+	p{
+		margin-left:203px;
+		color: $DoveGray;
+		font-size: $fontPadrao - 1px;		
+	}
+	&.bigger{
+		width:820px;
+		height:195px;
+		img{
+			width:411px;
+			height:195px;
+		}
+		span{
+			font-size:$fontTituloMenor - 2px;
+		}
+		p{
+			font-size: $fontPadrao + 2px;
+		}
+		span, p{
+			margin-left: 430px;
+		}	
+	}
+	&:hover{
+		@include opacity (0.8);
+	}
+}
+.doisTerco{
+	width:820px;
+}
+.terco{
+	width:410px;
+	margin-left:20px;
+	&:first-child, &:first-of-type{
+		margin-left:0px;
+	}
+}
+.doisTerco, .terco{
+	vertical-align: top;
+	display:inline-block;	
+	.textTitulo{
+		font-size: $fontTituloMenor + 1px;
+		margin-bottom:40px;
+	}
+	li{
+		@include boxGeralPortal;
+		&:last-child{
+			margin-bottom:0px;
+		}
+	}
+}
+.doisTerco + .terco, .terco + .doisTerco{
+	margin-left:30px;
+}
+
+.carrosselShop{
+	width:100%;
+	border:1px solid $Mercury3;
+	@include border-radius (4px);
+	padding:15px 26px 52px;
+	position:relative;
+	overflow:hidden;
+	a.logo{
+		display:inline-block;
+		text-indent:-9999px;
+		background: url('../images/icons/logo-shop.png');
+		width:174px;
+		height:46px;
+		text-indent:-9999px;
+	}
+	input[type=search]{
+		float:right;
+		right:0;
+		background: $Alabaster;
+		height:40px;
+		width:292px;
+		border:1px solid $Mercury3;
+		@include border-radius (4px);
+		padding:0px 15px 0px 55px;
+		font-size: $fontPadrao + 1px;
+		font-style: italic;
+		color: $SilverChalice;
+	}
+	input[type=submit]{
+		float:right;
+		right: 277px;
+		top: 24px;
+		background-color:transparent;
+		border:0px;
+		width:24px;
+		height:24px;
+		@include icoSprite;
+		background-position:-144px 0px;
+		text-indent:-9999px;
+		cursor:pointer;
+		position:absolute;
+		&:hover{
+			@include filter ($saturate);
+		}
+	}
+	&:before{
+		content:'';
+		position:absolute;
+		@include calc (width, '100% - 52px');
+		left:26px;
+		top:70px;
+		height:1px;
+		background:transparent;
+		border-top:1px dashed $Mercury3;
+	}
+	li{
+		border-left: 1px solid $Mercury3;
+		overflow:hidden;
+		display:inline-block;
+		&:first-child{
+			border-left:0px;
+		}
+	}
+	div.produtos{
+		margin-top:30px;
+		width:100%;
+		position:relative;
+		height:280px;
+		ul{
+			position:absolute;
+			display:none;
+			&.do-ativo{
+				display:block;
+			}
+		}
+		li{
+			width:245px;
+			height:280px;
+			@include transition ($tranAll);
+			a{
+				display:block;
+			}
+			&:hover{
+				@include opacity (0.75);
+			}
+		}
+		li.do-exit{
+			margin-left:-100.2%;
+		}
+		img{
+			margin:20px 0;
+			@include centralizandoX;
+		}
+		span, p{
+			width:70%;
+			margin-left:15%;
+			text-align:center;
+			display:block;
+			font-weight:bold;
+		}
+		span{
+			color:$BigStone;
+			font-size: $fontPadrao - 1px;
+			margin-bottom:5px;
+			& + span{
+				color: $DoveGray;
+				margin-bottom:0px;
+			}
+		}
+		p{
+			font-size:$fontTituloMenor;
+			color: $Rhino;
+			span{
+				color:inherit;
+				font-size: $fontPadrao;
+				display:initial;
+				margin:0;
+			}
+		}
+	}
+	button{
+		font-size: $fontPadrao - 1px;
+		font-weight: 400;
+		text-align:center;
+		color: $Rhino;
+		height:40px;
+		@include calc (width, '((100% / 8) + 7px)');
+		line-height:40px;
+		overflow:hidden;
+		cursor:pointer;
+		border:0px;
+		border-left:1px solid $Mercury3;
+		padding:0px;
+		background:transparent;
+		position:absolute;
+		bottom:-53px;
+		z-index:2;
+		&:first-of-type{left:-26px; border:0px;}
+		&:nth-of-type(2){@include calc (left, '-26px + ((100% / 8) + 7px)')}
+		&:nth-of-type(3){@include calc (left, '-26px + (((100% / 8) + 7px) * 2)')}
+		&:nth-of-type(4){@include calc (left, '-26px + (((100% / 8) + 7px) * 3)')}
+		&:nth-of-type(5){@include calc (left, '-26px + (((100% / 8) + 7px) * 4)')}
+		&:nth-of-type(6){@include calc (left, '-26px + (((100% / 8)  + 7px)* 5)')}
+		&:nth-of-type(7){@include calc (left, '-26px + (((100% / 8) + 7px) * 6)')}
+		&:nth-of-type(8){@include calc (left, '-26px + (((100% / 8) + 7px) * 7)')}
+		&:hover{
+			background: rgba($Alabaster, 0.35);
+		}
+		span{
+			height:3px;
+			width:0px;
+			background:transparent;
+			position:absolute;
+			left:0;
+			bottom:0;
+			display:block;
+		}
+		&.do-ativo{
+			font-weight:bold;
+			background: $Alabaster;
+			span{
+				width:0%;
+				background: $Rhino;
+				margin:0;
+			}
+		}
+	}
+	ul.departamentos{
+		margin-top:10px;
+		border-top:1px solid $Mercury3;
+		width:100%;
+		height:40px;
+		position:absolute;
+		bottom:0;
+		left:0;
+		overflow:hidden;
+		z-index:1;
+		@include border-radius(0px 0px 4px 4px);
+	}
+}
+
+
+
+////alteracoes menu
+.home > header > nav > ul > li > ul, 
+.menuMobile > nav > ul > li > ul{
+	overflow:visible;
+	width: $width-fix - 40px;
+	overflow:hidden;
+	&:before{
+		content:'';
+		position:absolute;
+		display:block;
+		height:100%;
+		width:300%;
+		left:0;
+		top:0;
+		margin-left:-100%;
+		background: $Eden;
+	}
+	li, li a{
+		text-align:left;
+	}
+	div{
+		display:inline-block;
+		width:($width-fix - 120px )/ 4;
+		margin-left:20px;
+		vertical-align: top;
+		&:first-child{
+			margin-left:0px;
+		}
+		p{
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight:bold;
+			color: $White;
+			margin-left:10px;
+			margin-bottom:15px;
+		}
+	}
+}
+.home > header > nav > ul > li:hover > ul, 
+.menuMobile > nav > ul > li:hover > ul{
+	overflow:visible;
+	height: auto;
+}
+.portalIbc > .menumobile >  nav > ul > li:hover > ul,
+.menuMobile > nav > ul > li:hover > ul{
+	left: -250px;
+	padding-top:30px;
+	li:nth-child(7) a{
+		line-height:15px;
+	}
+}
+
+.portalIbc > .menuMobile > nav > ul > li > ul div{
+	margin-left:10px;
+}

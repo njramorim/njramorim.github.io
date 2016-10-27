@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="pt-br"> <!--<![endif]-->
+	<head>
+		<title>Oi Survey</title>
+		<meta charset="utf-8">	
+		<meta name="keywords" content="">
+		<meta name="author" content="">	
+		<link rel="icon" href="img/favicon.ico type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--[if !IE 10]><!-->
+		<script>  
+			if (/*@cc_on!@*/false) {  
+				document.documentElement.className+=" ie10";  
+			}  
+		</script>
+		<script src="js/jquery-1.11.1.min.js"></script>	
+		<script src="http://cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+		<script src="js/icheck.min.js"></script>
+		
+		<script>
+			webshims.setOptions('forms-ext', {types: 'date'});
+		webshims.polyfill('forms forms-ext');
+		</script>
+		<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->	
+		<!--<![endif]--> 
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			.gradient {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/minimal.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+	</head>
+	
+<body class="">
+	<header>
+		<section id="titulo">
+			<div>
+				<h1 class="up">Oi Survey</h1>
+				<button class="usuario">Olá, <span>Jhon Doe</span></button>
+				<ul class="balao">
+					<li><a href="#">Alterar Senha</a></li>
+					<li><a href="#"><i>Sair</i></a></li>
+				</ul>
+			</div>
+			<ul class="menu">
+				<div>
+					<li ><a href="#">RELATÓRIO RESPOSTAS</a>
+					</li>
+					<li class="do-ativo"><a href="#">RELATÓRIO FORMULÁRIOS</a></li>
+					<li ><a href="#">USUÁRIOS</a></li>
+				</div>
+			</ul>
+		</section>
+	</header>		
+	<div class="contentWRAP">
+		<section class="forms">
+			<form>
+				<h2>editar formulários</h2>
+					<div class="dual">
+						<ul>
+							<li><label class="defaultLabel">Código</label><input class="inputPADRAO wid075 codigo" disabled value="3672"></input>
+							<li><label class="defaultLabel">Nome</label><input class="inputPADRAO wid380"></input>
+							</li>
+							<li><label class="defaultLabel">Data Início</label>
+								<input type="date" class="inputPADRAO wid120"></input>
+							</li>
+							<li><label class="defaultLabel">Data Fim</label>
+								<input type="date" class="inputPADRAO wid120"></input>
+							</li>
+							<li><label class="defaultLabel">Status</label>
+								<p class="radio">
+									<span class="radio-container"><input type="radio" name="check01" id="sim" value="sim" class="cform"></span><label for="sim">Ativo</label>
+								</p>
+							</li>
+						</ul>
+						<button class="btnPADRAO">SALVAR</button>
+					</div>
+			</form>
+		</section>	
+		<div class="fundo"></div>
+	</div>	
+	<footer class="final">
+		<div>
+			<ul class="rdpLINKS">
+				<li><a href="#">www.oi.com.br</a></li>
+				<li><a href="#">Política de Privacidade</a></li>
+				<li><a href="#">Desenvolvido por Ezconet</a></li>
+			</ul>
+			<p>
+				&copy; Copyright <span id="dataAno"></span>
+			</p>
+		</div>	
+	</footer>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

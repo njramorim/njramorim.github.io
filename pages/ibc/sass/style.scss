@@ -1,0 +1,115 @@
+/*DESENVOLVIDO POR AGÊNCIA MESTRE*/
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/elementos';
+body{
+	min-width:$width-fix;
+	font-family: $openSans;
+	overflow-x:hidden;
+}
+header{
+	height:165px;
+	width: 100%;
+	background: $White;
+	position:relative;
+	border-bottom:5px solid $Eden;
+	z-index:10;
+}
+
+
+header section{
+	position:absolute;
+	top:-498px;
+	left:0;
+	@include transition ($tranDesce);
+	height:500px;
+	overflow:hidden;
+	&.do-ativo{
+		top:0;
+	}
+}
+
+header ~ section{
+	padding-top:70px;
+	padding-bottom:40px;
+	&.destaqueSec{
+		padding-top:0px;
+		& + section{
+			margin-top:125px;
+			padding-top:0px;
+			padding-bottom:0px;
+		}
+	}
+	&.gray{
+		background: $AthensGray;
+		.textTitulo form{
+			display:block;
+		}
+	}
+}
+
+footer{
+	width:100%;
+	min-width: $width-fix;
+	section{
+		background: $CloudBurst;
+		padding:50px 0;
+		& + section{
+			background: $CloudBurst2;
+			padding:20px 0;
+			form{
+				padding:0;
+				label{
+					color: $White;
+					font-size: $fontPadrao;
+					text-transform: uppercase;
+					display:inline-block;
+					margin-left:282px;
+				}
+				input{
+					width:220px;
+					display:inline-block;
+					margin:0 10px;
+				}
+				button{
+					display:inline-block;
+					width:170px;
+					font-size: $fontPadrao;
+					font-weight: 600;
+					line-height: $fontPadrao;
+					height:40px;
+					padding:0 13px;
+					&:after{
+						margin-top:0;
+					}
+					&:active::after{
+						margin-top:0;
+					}
+				}
+			}
+			& + section{
+				background: $BigStone;
+				padding:30px 0;
+				p{
+					margin-left:170px;
+					color: $PoloBlue;
+					font-size: $fontPadrao - 1px;
+					line-height:31px;
+					display:inline-block;
+					vertical-align:middle;
+					margin-right:10px;
+				}
+			}
+		}
+	}
+}
+
+section.blueSec{
+	background: $Rhino;
+	padding: 22px 0;
+	margin-top:100px;
+}
+@import 'partials/portalIbc';
+@import 'partials/queries';
+@import 'partials/hacks';
+@import 'partials/fixes';

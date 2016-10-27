@@ -1,0 +1,24 @@
+/* iCheck plugin Minimal skin, black
+----------------------------------- */
+.icheckbox_minimal{
+	display: inline-block;
+	*display: inline;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	background: url('../images/minimal.png') no-repeat;
+	border: none;
+	cursor: pointer;
+	margin-left:-22px;
+}
+
+.icheckbox_minimal {
+	background-position: 0 0;
+}
+.icheckbox_minimal.checked {
+	background-position: -15px 0;
+}
+
+

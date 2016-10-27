@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>ADM TIM - Relatório de Vendas</title>
+		<!--[if !IE 10]><!-->
+		<script>  
+			if (/*@cc_on!@*/false) {  
+				document.documentElement.className+=' ie10';  
+			}  
+		</script>	
+		<!--<![endif]--> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/jquery.placeholder.js"></script><!--Input Placeholder-->
+		
+		<link rel="stylesheet" type="text/css" href="css/yui-reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+
+	</head>
+<body class="geralcontent">
+
+	<div id="topoArea"><!--topoArea-->
+		<div class="topoAreaAzul"><!--topoAreaAzul-->
+			<div class="topoBuscas">
+				<form id="buscaCPF"  action="" type="post" method="post">
+					<input class="searchInput" type="text" name="buscCPF" id="buscacpf" placeholder="CPF"  >
+					<input type="submit" onclick="" class="btn-buscar" value="" alt="Buscar CPF" title="Buscar CPF"/>
+				</form>			
+				<form id="buscaPEDIDO"  action="" type="post" method="post">
+					<input class="searchInput menostopborda" type="text" name="buscPedido" id="buscapedido" placeholder="Pedido" >
+					<input type="submit" onclick="" class="btn-buscar" value="" alt="Buscar Pedido" title="Buscar Pedido"/>
+				</form>
+			</div>	
+			<div class="user-box">
+				<div id="masc-userFoto" class="ie8apaga">
+					<img src="img/adm_tim_telas01.jpg" class="roundteste">
+				</div>
+			</div>
+			 <!--[if IE 8 ]>			
+			  <div class="ie8user-box">
+				<img src="img/user-mascara.png" style="position:absolute; z-index:10">
+				<img src="img/adm_tim_telas01.jpg" style="position:absolute;z-index:1; height:52px; width:52px">
+			  </div>
+			 <![endif]-->
+			<div id="userPerfil">
+				<p class="userPerfilNome">José da Silva</p>
+				<p class="userPerfilLink"><a href="#">Meu Perfil</a></p>
+			</div>	
+		</div><!--FIM topoAreaAzul-->		
+		<div class="topoAreaCinza"><!--topoAreaCinza-->
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>></li>
+				<li><a href="#">Relatório de Vendas</a></li>
+			</ul>
+			<button class="btn-sair">
+				Sair
+			</button>
+			<button class="btn-sair-confirme">
+				Sim, sair
+			</button>
+		</div><!--FIM topoAreainza-->
+	</div><!--FIM topoArea-->
+	
+	<div class="blackarea">sss</div><div class="blackarea2">sss</div>
+	<div id="MenuArea"><!--MenuArea-->
+		<ul class="menuItens">
+			<div class="menuLogo">
+				TIM
+			</div>
+					<li><span class="menuItemNome">MENU</span></li>
+				<a href="#">
+					<li class="menuItemLink">Relatórios de Vendas</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink menuItemAtual">Time Line</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink">Estoque</li>
+				</a>
+				<a href="#">	
+					<li class="menuItemLink">Funil de Pedidos</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink">Detalhe do Pedido</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink">Detalhe do Pedido</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink">Aguardando Retirada</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink">Devolução Pós-entrega</li>
+				</a>
+				<a href="#">
+					<li class="menuItemLink">Usuários</li>
+				</a>
+		</ul>
+	</div><!-- FIM MenuArea-->
+	
+	<div id="conteudoGeral-Wrap"><!--conteudo-->
+		<div class="formulariosWrap">
+
+			<form id="formGeral"  action="" type="post" method="post">				
+				<div class="formLabelmaisInput">
+					<label class="formGeralLabel">Nome Completo</label>
+					<input class="geralInput required" type="text" name="fldNome" id=""  title="" data-val="true" data-val-required="" />
+				</div>					
+				<div class="formLabelmaisInput">
+					<label class="formGeralLabel">Endereço</label>
+					<input class="geralInput required" type="text" name="fldEnd" id=""  title=""  data-val="true" data-val-required=""/>
+				</div>					
+				<div class="formLabelmaisInput">
+					<label class="formGeralLabel">Telefone</label>
+					<input class="geralInput InputTel1 required" type="text" name="fldTelA1" id=""  title="" data-val="true" data-val-required="" />
+					<input class="geralInput InputTel2 required" type="text" name="fldTelA2" id=""  title=""  data-val="true" data-val-required=""/>
+				</div>					
+				<div class="formLabelmaisInput">
+					<label class="formGeralLabel">Telefone</label>
+					<input class="geralInput InputTel1 required" type="text" name="fldTelB1" id=""  title="" data-val="true" data-val-required=""/>
+					<input class="geralInput InputTel2 required" type="text" name="fldTelB2" id=""  title=""data-val="true" data-val-required="" />
+				</div>					
+								
+				<div class="radio">
+					<p>Sexo</p>
+					<input id="male" type="radio" name="fldGender" value="male" data-val="true" data-val-required="" class="required">
+					<label for="male">Masculino</label>
+					<input id="female" type="radio" name="fldGender" value="female" class="required">
+					<label for="female">Feminino</label>
+				</div>
+
+				<div class="formLabelmaisInput">
+					<label class="formGeralLabel">Profissão</label>
+					<input class="geralInput required" type="text" name="fldProf" id=""  title="" data-val="true" data-val-required="" />
+				</div>					
+				<div class="formLabelmaisInput">
+					<label class="formGeralLabel selectLabel">Ocupação</label>
+						<div class="SelectDiv">
+					<select class="geralInput geralSelect required" type="text" name="fldOcup" id="geralSelect01"  title="" value="" data-val="true" data-val-required="">
+						<option value="">Selecione</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+						</div>
+					<span class="geralSelectSpan">seta</span>
+				</div>					
+				
+				<input type="submit" class="enviar-btn" value="" alt="Entrar" title="Entrar"/>
+						<span class="error"></span>
+			</form>
+		</div>
+	</div><!-- FIM conteudo-->
+		
+	<div id="footerGeral"><!--footerGeral-->
+		<ul class="footerGeralLinks">
+			<li><a href="#">Política de Privacidade</a></li>
+			<li><a href="#">Desenvolvido por Ezconet</a></li>
+			<li><a href="#">www.tim.com.br</a></li>
+			<li class="ie8lastLI"><!--[if IE 8 ]>	<img src="img/logo-ezco2.jpg" style="margin-right:10px; margin-bottom:-5px">		 <![endif]-->
+			© Copyright 2014</li>
+		</ul>
+	</div><!-- FIM footerGeral-->
+	
+</body>
+
+	<script>
+		// To test the @id toggling on password inputs in browsers that don’t support changing an input’s @type dynamically (e.g. Firefox 3.6 or IE), uncomment this:
+		// $.fn.hide = function() { return this; }
+		// Then uncomment the last rule in the <style> element (in the <head>).
+		$(function() {
+		// Invoke the plugin
+			$('input, textarea').placeholder();
+			// That’s it, really.			
+			});					
+	</script>
+	<script>
+		//round-corner para ie8	
+		$('#masc-userFoto').corner();
+	</script>
+	<script>
+		//show and hide btn-sair
+		$(".btn-sair").click(function (e) {
+			$(".btn-sair-confirme").fadeToggle("fast");
+			e.stopImmediatePropagation();
+		});
+
+		$(document).click(function (e) {
+			if($(".btn-sair-confirme").is(":visible") && !$(".btn-sair-confirme").is(e.target)) {
+				$(".btn-sair-confirme").fadeOut("fast");
+			}
+		});
+	</script>	
+	<script>
+		//fazer mascara de select
+		$(document).ready(function() {
+
+			$('.geralSelectSpan').click(function() {
+				open($('#geralSelect01'));
+			});
+
+		});
+
+		function open(elem) {
+			if (document.createEvent) {
+				var e = document.createEvent("MouseEvents");
+				e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+				elem[0].dispatchEvent(e);
+			} else if (element.fireEvent) {
+				elem[0].fireEvent("onmousedown");
+			}
+		}
+	</script>
+	<script src="js/validate.js"></script>
+	<script type="text/javascript">
+		//validate fields
+        $(document).ready(function () {
+            $('#formGeral').validate({
+				showErrors: function(errorMap, errorList) {
+						$(".error").html("Preencha corretamente todos os campos antes de continuar");
+					}
+				});			
+        });
+		
+	</script>
+</html>

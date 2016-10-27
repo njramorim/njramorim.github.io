@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'OratorpraOi';
+    src: url('oratorpr.eot');
+    src: url('oratorpr.eot') format('embedded-opentype'),
+         url('oratorpr-webfont.woff') format('woff'),
+         url('oratorpr.ttf') format('truetype'),
+         url('oratorpr.svg#OratorpraOiText2') format('svg');
+}

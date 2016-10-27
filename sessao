@@ -1,0 +1,19 @@
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="2">
+            <File firstVisibleLine="14" xOffset="0" scrollWidth="1890" startPos="1502" endPos="1502" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\index.html">
+                <Mark line="43" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1890" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\css\fonts\fonts.css" />
+            <File firstVisibleLine="61" xOffset="0" scrollWidth="28240" startPos="2218" endPos="2201" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\sass\partials\_variables.scss" />
+        </mainView>
+        <subView activeIndex="5">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="25398" startPos="701" endPos="701" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\sass\style.scss" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="25398" startPos="1385" endPos="1385" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\sass\partials\_reset.scss" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="25398" startPos="85" endPos="85" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\sass\partials\_elementos.scss" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6057" startPos="0" endPos="0" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\sass\partials\_hacks.scss" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="25452" startPos="250" endPos="250" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\js\scripts.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="25452" startPos="2838" endPos="2838" selMode="0" lang="Javascript" encoding="-1" filename="C:\Users\Home\Desktop\nelson\portfolio\2015\html\js\elementos.js" />
+        </subView>
+    </Session>
+</NotepadPlus>

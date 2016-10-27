@@ -1,0 +1,255 @@
+
+//cores
+$White: #ffffff;
+$Black: #000000;
+$Scooter: #2cabbe;
+$PigeonPost: #a7b6dd;
+$PoloBlue: #8a9ccb;
+$BigStone: #141c31;
+$Fiord: #404d6f;
+$SanMarino: #407b9d;
+$CloudBurst: #1c2640;
+$CloudBurst2: #1f2a46;
+$Martinique: #2b334a;
+$Rhino: #2a385d;
+$Elephant: #133447;
+$Paradiso: #2d717f;
+$Eden: #145b65;
+$AthensGray: #f7f7f8;
+$DoveGray: #686868;
+$Alto: #d4d4d4;
+$Silver: #c7c7c7;
+$Mercury: #e7e7e7;
+$Mercury2: #e8e8e8;
+$Mercury3: #e2e2e2;
+$Alabaster: #f8f8f8; 
+$SilverChalice: #a2a2a2; 
+$Tuna: #3e3f49;
+$SanJuan: #35456f;
+$Sisal: #d9d4c5;
+$Napa: #b1ab9a;
+$ClayCreek: #847a5c;
+$BuddhaGold: #D59701;
+
+
+
+//font family
+$openSans:'Open Sans', 'arial', sans-serif;
+//tamanhos
+$fontPadrao: 14px;
+$fontTituloMenor: 20px;
+$fontTitulo: 30px;
+$fontTituloMaior: 50px;
+
+
+
+//media-queries
+$total: 1280px;
+$tablet: 939px;
+$mobileLandscape: 740px;
+$mobile: 470px;
+
+
+
+//wrappers
+$width-fix: 1280px;
+$width-geral: 958px;
+
+//mixins
+@mixin input-placeholder {
+    &.placeholder { @content}
+    &:-moz-placeholder { @content }
+    &::-moz-placeholder { @content }
+    &:-ms-input-placeholder { @content }
+    &::-webkit-input-placeholder { @content } 
+}
+
+@mixin user-select ($user-select){
+	-webkit-touch-callout: $user-select;
+	-webkit-user-select: $user-select;
+	-khtml-user-select: $user-select;
+	-moz-user-select: $user-select;
+	-ms-user-select: $user-select;
+	user-select: $user-select;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow ($box-shadow){
+  -moz-box-shadow: $box-shadow;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@mixin opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+@mixin filter($filter){
+  -webkit-filter: $filter;
+  -moz-filter: $filter;
+  -ms-filter: $filter;
+  -o-filter: $filter;
+  filter: $filter;
+} 
+
+@mixin flipX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; 
+}
+@mixin flipY {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV"; 
+}
+
+@mixin centralizandoX {
+	position:relative;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+@mixin transform-origin($val) {
+  -webkit-transform-origin: $val;
+  -moz-transform-origin: $val;
+  -ms-transform-origin: $val;
+  transform-origin: $val;
+}
+
+@mixin transform-scale ($scaleX, $scaleY){
+	-ms-transform: scale($scaleX, $scaleY); 
+    -webkit-transform: scale($scaleX, $scaleY); 
+    transform: scale($scaleX, $scaleY);
+}
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: -noz-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin keyframes ($animationname) {
+  @-webkit-keyframes #{$animationname} {
+    @content; 
+  }
+  @-moz-keyframes #{$animationname} {
+    @content;
+  }
+  @-ms-keyframes #{$animationname} {
+    @content;
+  }
+  @keyframes #{$animationname} {
+    @content;
+  } 
+}
+
+@mixin animation ($delay, $duration, $animation, $vezes, $tipo) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+	-webkit-animation-iteration-count: $vezes;
+	-webkit-animation-timing-function: $tipo;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+	-moz-animation-iteration-count: $vezes;
+	-moz-animation-timing-function: $tipo;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+	-o-animation-iteration-count: $vezes;
+	-o-animation-timing-function: $tipo;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+	animation-iteration-count: $vezes;
+	animation-timing-function: $tipo;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+//filtros
+$sombraFocus: 0px 0px 2px 2px rgba($Black, 0.1);
+$sombraSemFocus: 0px 0px 2px 2px rgba($Black, 0);
+$sepia: sepia(100%) ;
+$saturate:  saturate(1.8);
+
+@mixin gradLinearWhiteToBlack {
+	$gradientParte01:20%;
+	$gradientParte02:80%;	
+	background: -webkit-linear-gradient(top, $White $gradientParte01, $Black $gradientParte02);
+	background: -moz-linear-gradient(top, $White $gradientParte01, $Black $gradientParte02);
+	background: -o-linear-gradient(top, $White $gradientParte01, $Black $gradientParte02);
+	background: -ms-linear-gradient(top, $White $gradientParte01, $Black $gradientParte02);
+	background: linear-gradient(top, $White $gradientParte01, $Black $gradientParte02);
+}
+
+
+@mixin gradRadialWhiteToBlack{
+	background: $White; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  $White $gradientParte01, $Black $gradientParte02); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($gradientParte01,$White), color-stop($gradientParte02, $Black)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $White $gradientParte01,$Black $gradientParte02); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $White $gradientParte01,$Black $gradientParte02); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $White $gradientParte01,$Black $gradientParte02); /* IE10+ */
+	background: linear-gradient(to bottom,  $White $gradientParte01,$Black $gradientParte02); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$White', endColorstr='$Black',GradientType=0 ); /* IE6-8 */
+}
+
+//transitions
+$tranAll: 0.3s ;
+$tranDelay: 0.2s ease-in-out 0.2s;
+$tranDelay2: 0.2s ease-in-out 0.5s;
+$tranMenu: background-color 0.2s ease-in-out;
+$tranDesce: all 0.5s ease-in-out;
+
+//animations
+@include keyframes (animOpacityBlur){
+	0%{@include opacity (0); @include filter (blur(3px)); }
+	100% {@include opacity (1); @include filter (blur(0)); }	
+}

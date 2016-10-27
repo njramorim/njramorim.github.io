@@ -1,0 +1,13 @@
+//media-queries
+@media only screen and (max-device-width : $tablet) and (min-device-width: $mobileLandscape + 1px){
+
+}
+
+@media only screen and (max-device-width : $mobileLandscape) and (min-device-width: $mobile + 1px){
+
+}
+
+@media only screen and (max-device-width : $mobile){
+
+
+}

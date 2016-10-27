@@ -1,0 +1,1541 @@
+@-o-keyframes bounceVert {
+  /* line 254, ../sass/partials/_variables.scss */
+  0% {
+    top: 30%;
+    opacity: 0;
+  }
+
+  /* line 255, ../sass/partials/_variables.scss */
+  50% {
+    top: 60%;
+    opacity: 1;
+  }
+
+  /* line 256, ../sass/partials/_variables.scss */
+  80% {
+    top: 47%;
+  }
+
+  /* line 257, ../sass/partials/_variables.scss */
+  100% {
+    top: 50%;
+  }
+}
+
+@-moz-keyframes bounceVert {
+  /* line 254, ../sass/partials/_variables.scss */
+  0% {
+    top: 30%;
+    opacity: 0;
+  }
+
+  /* line 255, ../sass/partials/_variables.scss */
+  50% {
+    top: 60%;
+    opacity: 1;
+  }
+
+  /* line 256, ../sass/partials/_variables.scss */
+  80% {
+    top: 47%;
+  }
+
+  /* line 257, ../sass/partials/_variables.scss */
+  100% {
+    top: 50%;
+  }
+}
+
+@-webkit-keyframes bounceVert {
+  /* line 254, ../sass/partials/_variables.scss */
+  0% {
+    top: 30%;
+    opacity: 0;
+  }
+
+  /* line 255, ../sass/partials/_variables.scss */
+  50% {
+    top: 60%;
+    opacity: 1;
+  }
+
+  /* line 256, ../sass/partials/_variables.scss */
+  80% {
+    top: 47%;
+  }
+
+  /* line 257, ../sass/partials/_variables.scss */
+  100% {
+    top: 50%;
+  }
+}
+
+@-keyframes bounceVert {
+  /* line 254, ../sass/partials/_variables.scss */
+  0% {
+    top: 30%;
+    opacity: 0;
+  }
+
+  /* line 255, ../sass/partials/_variables.scss */
+  50% {
+    top: 60%;
+    opacity: 1;
+  }
+
+  /* line 256, ../sass/partials/_variables.scss */
+  80% {
+    top: 47%;
+  }
+
+  /* line 257, ../sass/partials/_variables.scss */
+  100% {
+    top: 50%;
+  }
+}
+
+@-o-keyframes fadeOut {
+  /* line 260, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 261, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 260, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 261, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 260, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 261, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-keyframes fadeOut {
+  /* line 260, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 261, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fumacaGeral {
+  /* line 265, ../sass/partials/_variables.scss */
+  0% {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 266, ../sass/partials/_variables.scss */
+  100% {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@-moz-keyframes fumacaGeral {
+  /* line 265, ../sass/partials/_variables.scss */
+  0% {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 266, ../sass/partials/_variables.scss */
+  100% {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@-webkit-keyframes fumacaGeral {
+  /* line 265, ../sass/partials/_variables.scss */
+  0% {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 266, ../sass/partials/_variables.scss */
+  100% {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@-keyframes fumacaGeral {
+  /* line 265, ../sass/partials/_variables.scss */
+  0% {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 266, ../sass/partials/_variables.scss */
+  100% {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@-o-keyframes fumaca {
+  /* line 269, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 270, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0.7, 1);
+    -webkit-transform: scale(0.7, 1);
+    transform: scale(0.7, 1);
+  }
+}
+
+@-moz-keyframes fumaca {
+  /* line 269, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 270, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0.7, 1);
+    -webkit-transform: scale(0.7, 1);
+    transform: scale(0.7, 1);
+  }
+}
+
+@-webkit-keyframes fumaca {
+  /* line 269, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 270, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0.7, 1);
+    -webkit-transform: scale(0.7, 1);
+    transform: scale(0.7, 1);
+  }
+}
+
+@-keyframes fumaca {
+  /* line 269, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 270, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0.7, 1);
+    -webkit-transform: scale(0.7, 1);
+    transform: scale(0.7, 1);
+  }
+}
+
+@-o-keyframes fumacaFim {
+  /* line 273, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+
+  /* line 274, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+}
+
+@-moz-keyframes fumacaFim {
+  /* line 273, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+
+  /* line 274, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+}
+
+@-webkit-keyframes fumacaFim {
+  /* line 273, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+
+  /* line 274, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+}
+
+@-keyframes fumacaFim {
+  /* line 273, ../sass/partials/_variables.scss */
+  from {
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+
+  /* line 274, ../sass/partials/_variables.scss */
+  to {
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+}
+
+@-o-keyframes luzes {
+  /* line 278, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 0.8;
+  }
+
+  /* line 279, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0.88;
+  }
+}
+
+@-moz-keyframes luzes {
+  /* line 278, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 0.8;
+  }
+
+  /* line 279, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0.88;
+  }
+}
+
+@-webkit-keyframes luzes {
+  /* line 278, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 0.8;
+  }
+
+  /* line 279, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0.88;
+  }
+}
+
+@-keyframes luzes {
+  /* line 278, ../sass/partials/_variables.scss */
+  0% {
+    opacity: 0.8;
+  }
+
+  /* line 279, ../sass/partials/_variables.scss */
+  100% {
+    opacity: 0.88;
+  }
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: content-box;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+input, textarea, select {
+  *font-size: 100%;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 2, ../sass/partials/_reset.scss */
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* line 3, ../sass/partials/_reset.scss */
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* line 7, ../sass/partials/_reset.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* line 10, ../sass/partials/_reset.scss */
+a:focus, a:visited, a:hover, a:active, a {
+  color: inherit;
+  text-decoration: none;
+  focus: 0px;
+  outline: 0px;
+}
+
+/* line 16, ../sass/partials/_reset.scss */
+button:active {
+  outline: 0px;
+  focus: none;
+}
+
+/* line 20, ../sass/partials/_reset.scss */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, ../sass/partials/_reset.scss */
+.left {
+  float: left;
+  left: 0;
+}
+
+/* line 29, ../sass/partials/_reset.scss */
+.right {
+  float: right;
+  right: 0;
+}
+
+/* line 33, ../sass/partials/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/* line 2, ../sass/partials/_elementos.scss */
+svg#logoGrupo {
+  display: block;
+  margin: 10% auto 5%;
+  max-width: 80%;
+  height: auto;
+  max-height: calc(100vh - 400px);
+  opacity: 0;
+  -webkit-transition: 3s ease-out 0.5s;
+  -moz-transition: 3s ease-out 0.5s;
+  -o-transition: 3s ease-out 0.5s;
+  transition: 3s ease-out 0.5s;
+}
+/* line 12, ../sass/partials/_elementos.scss */
+svg#logoGrupo g#na g#dispositivos > path {
+  -ms-transform: scale(0, 1);
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transition: all 2s ease-in-out 2s;
+  -moz-transition: all 2s ease-in-out 2s;
+  -o-transition: all 2s ease-in-out 2s;
+  transition: all 2s ease-in-out 2s;
+}
+
+/* line 21, ../sass/partials/_elementos.scss */
+header > h1.do-active svg#logoGrupo {
+  opacity: 1;
+}
+/* line 25, ../sass/partials/_elementos.scss */
+header > h1.do-active svg#logoGrupo g#na g#dispositivos > path {
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* line 40, ../sass/partials/_elementos.scss */
+.contatoArea {
+  position: absolute;
+  width: 520px;
+  height: 360px;
+  top: 40%;
+  left: 50%;
+  opacity: 0;
+  display: block;
+  margin-top: -180px;
+  margin-left: -260px;
+  pointer-events: none;
+  -webkit-transition: height 0.6s, opacity 0.6s, top 0.6s;
+  -moz-transition: height 0.6s, opacity 0.6s, top 0.6s;
+  -o-transition: height 0.6s, opacity 0.6s, top 0.6s;
+  transition: height 0.6s, opacity 0.6s, top 0.6s;
+  overflow: hidden;
+  z-index: 99;
+  overflow: hidden;
+  perspective: 1000;
+  transform-style: preserve-3d;
+}
+/* line 53, ../sass/partials/_elementos.scss */
+.contatoArea.do-active {
+  opacity: 1;
+  top: 50%;
+  pointer-events: initial;
+  -o-animation: bounceVert 0.8s ease-in-out;
+  -moz-animation: bounceVert 0.8s ease-in-out;
+  -webkit-animation: bounceVert 0.8s ease-in-out;
+  animation: bounceVert 0.8s ease-in-out;
+}
+/* line 59, ../sass/partials/_elementos.scss */
+.contatoArea:before {
+  content: '';
+  opacity: 0.7;
+  position: absolute;
+  width: 520px;
+  height: 360px;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -260px;
+  background: url("../images/contact-noise.jpg");
+  background-repeat: repeat;
+}
+/* line 76, ../sass/partials/_elementos.scss */
+.contatoArea svg#contactCloseBtn {
+  cursor: pointer;
+  z-index: 99;
+  float: right;
+  right: 20px;
+  margin-top: 20px;
+  position: absolute;
+}
+/* line 84, ../sass/partials/_elementos.scss */
+.contatoArea form {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+/* line 90, ../sass/partials/_elementos.scss */
+.contatoArea form label {
+  font-size: 14px;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 97, ../sass/partials/_elementos.scss */
+.contatoArea form label.error input, .contatoArea form label.error textarea {
+  border: 2px solid red;
+}
+/* line 100, ../sass/partials/_elementos.scss */
+.contatoArea form label.error:after {
+  content: 'Preencha o campo abaixo';
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+/* line 108, ../sass/partials/_elementos.scss */
+.contatoArea form input, .contatoArea form textarea {
+  padding: 5px;
+  display: block;
+  margin-top: 3px;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 116, ../sass/partials/_elementos.scss */
+.contatoArea form textarea {
+  height: 90px;
+  max-height: 90px;
+  max-width: 100%;
+}
+/* line 121, ../sass/partials/_elementos.scss */
+.contatoArea form button {
+  margin-top: 5px;
+  cursor: pointer;
+  float: right;
+  right: 0;
+  height: 30px;
+  width: 110px;
+  background: #e6af3b;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  border: 0px;
+  border-radius: 30px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+/* line 135, ../sass/partials/_elementos.scss */
+.contatoArea form button:hover {
+  background: #bc8818;
+}
+/* line 142, ../sass/partials/_elementos.scss */
+.contatoArea.do-send {
+  transform: rotateY(180deg);
+  transition: all 0.6s;
+}
+/* line 146, ../sass/partials/_elementos.scss */
+.contatoArea .front, .contatoArea .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 360px;
+}
+/* line 154, ../sass/partials/_elementos.scss */
+.contatoArea .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+/* line 158, ../sass/partials/_elementos.scss */
+.contatoArea .back {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+/* line 162, ../sass/partials/_elementos.scss */
+.contatoArea.do-send {
+  height: 90px;
+  margin-top: -45px;
+  -webkit-transition: all 1s 0.3s;
+  -moz-transition: all 1s 0.3s;
+  -o-transition: all 1s 0.3s;
+  transition: all 1s 0.3s;
+  -o-animation: fadeOut 0.6s 2.6s;
+  -moz-animation: fadeOut 0.6s 2.6s;
+  -webkit-animation: fadeOut 0.6s 2.6s;
+  animation: fadeOut 0.6s 2.6s;
+}
+/* line 167, ../sass/partials/_elementos.scss */
+.contatoArea.do-send .front {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+/* line 172, ../sass/partials/_elementos.scss */
+.contatoArea.do-send .back {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s 1s;
+  -moz-transition: opacity 0.4s 1s;
+  -o-transition: opacity 0.4s 1s;
+  transition: opacity 0.4s 1s;
+  backface-visibility: visible;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 6% auto;
+  color: white;
+}
+
+/* line 187, ../sass/partials/_elementos.scss */
+.curriculumArea {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  color: white;
+  width: 100%;
+  padding: 0 20% 100px;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 95;
+  overflow-y: scroll;
+  background: rgba(146, 125, 70, 0.7);
+}
+/* line 199, ../sass/partials/_elementos.scss */
+.curriculumArea h2, .curriculumArea h3 {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* line 204, ../sass/partials/_elementos.scss */
+.curriculumArea h2 {
+  padding: 50px 0px 20px 0;
+  width: 60%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 209, ../sass/partials/_elementos.scss */
+.curriculumArea > div {
+  padding-top: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 214, ../sass/partials/_elementos.scss */
+.curriculumArea h3 {
+  margin: 25px 0 20px;
+  font-size: 25px;
+  font-weight: 600;
+  max-width: 60%;
+}
+/* line 220, ../sass/partials/_elementos.scss */
+.curriculumArea p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: 60%;
+}
+/* line 225, ../sass/partials/_elementos.scss */
+.curriculumArea svg {
+  cursor: pointer;
+  position: fixed;
+  z-index: 99;
+}
+/* line 229, ../sass/partials/_elementos.scss */
+.curriculumArea svg#closeBtn {
+  float: right;
+  right: 15%;
+  top: 5%;
+}
+/* line 234, ../sass/partials/_elementos.scss */
+.curriculumArea svg#arrowUp, .curriculumArea svg#arrowDown {
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+  bottom: 5%;
+  float: left;
+  left: 51%;
+}
+/* line 242, ../sass/partials/_elementos.scss */
+.curriculumArea svg#arrowDown {
+  margin-left: -35px;
+  -webkit-transform: rotate(180deg) scale(2, 2);
+  -moz-transform: rotate(180deg) scale(2, 2);
+  -ms-transform: rotate(180deg) scale(2, 2);
+  -o-transform: rotate(180deg) scale(2, 2);
+  transform: rotate(180deg) scale(2, 2);
+}
+
+/* line 254, ../sass/partials/_elementos.scss */
+header > nav ul {
+  display: block;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out 1s;
+  -moz-transition: all 0.8s ease-in-out 1s;
+  -o-transition: all 0.8s ease-in-out 1s;
+  transition: all 0.8s ease-in-out 1s;
+  pointer-events: none;
+}
+/* line 260, ../sass/partials/_elementos.scss */
+header > nav ul li {
+  display: inline-block;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #342b06;
+  color: #342b06;
+  cursor: pointer;
+  margin-left: 20px;
+  text-transform: uppercase;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 275, ../sass/partials/_elementos.scss */
+header > nav ul li:first-child {
+  margin-left: 0px;
+}
+/* line 276, ../sass/partials/_elementos.scss */
+header > nav ul li:before {
+  content: '';
+  position: absolute;
+  background: #988b6c;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-radius: 50%;
+  border: 0px solid transparent;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  box-sizing: border-box;
+  z-index: -1;
+}
+/* line 293, ../sass/partials/_elementos.scss */
+header > nav ul li:hover:before, header > nav ul li.do-active:before {
+  opacity: 1;
+  margin-left: -55px;
+  margin-top: -55px;
+  width: 110px;
+  height: 110px;
+  z-index: -1;
+}
+/* line 304, ../sass/partials/_elementos.scss */
+header > nav.do-active ul {
+  opacity: 1;
+  pointer-events: initial;
+  FLOAT: right;
+  margin-right: 40px;
+}
+
+/* line 315, ../sass/partials/_elementos.scss */
+body > section > svg#casaLayer {
+  z-index: 50;
+}
+/* line 317, ../sass/partials/_elementos.scss */
+body > section > svg#casaLayer #luzes {
+  opacity: 0.8;
+  o-animation-name: luzes;
+  o-animation-duration: 1s;
+  o-animation-timing-function: ease-in-out;
+  o-animation-delay: -0.5s;
+  o-animation-iteration-count: infinite;
+  o-animation-direction: alternate;
+  o-animation-fill-mode: backwards;
+  o-animation-play-state: running;
+  -moz-animation-name: luzes;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-delay: -0.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-play-state: running;
+  -webkit-animation-name: luzes;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: -0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-play-state: running;
+  animation-name: luzes;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+}
+
+/* line 327, ../sass/partials/_elementos.scss */
+#portfolioLayer {
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 330, ../sass/partials/_elementos.scss */
+#portfolioLayer #portifaContent {
+  -ms-transform: scale(1, 0);
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+  -moz-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  -o-transform-origin: bottom;
+  transform-origin: bottom;
+  opacity: 0;
+}
+/* line 338, ../sass/partials/_elementos.scss */
+#portfolioLayer #closeBtn {
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  -o-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+/* line 342, ../sass/partials/_elementos.scss */
+#portfolioLayer #setas, #portfolioLayer #closeBtn, #portfolioLayer #pageItens {
+  display: none;
+  cursor: pointer;
+}
+/* line 347, ../sass/partials/_elementos.scss */
+#portfolioLayer[data-value='do-active'] {
+  pointer-events: initial;
+}
+/* line 350, ../sass/partials/_elementos.scss */
+#portfolioLayer[data-value='do-active'] #portifaContent {
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+}
+/* line 358, ../sass/partials/_elementos.scss */
+#portfolioLayer[data-value='do-active'] #setas, #portfolioLayer[data-value='do-active'] #closeBtn, #portfolioLayer[data-value='do-active'] #pageItens {
+  opacity: 1;
+}
+/* line 360, ../sass/partials/_elementos.scss */
+#portfolioLayer[data-value='do-active'] #setas:hover, #portfolioLayer[data-value='do-active'] #closeBtn:hover, #portfolioLayer[data-value='do-active'] #pageItens:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 364, ../sass/partials/_elementos.scss */
+#portfolioLayer[data-value='do-active'] #setas:active, #portfolioLayer[data-value='do-active'] #closeBtn:active, #portfolioLayer[data-value='do-active'] #pageItens:active {
+  opacity: 0.7;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 379, ../sass/partials/_elementos.scss */
+#persona {
+  pointer-events: none;
+  z-index: 55;
+}
+/* line 382, ../sass/partials/_elementos.scss */
+#persona > #tudo {
+  opacity: 0;
+}
+/* line 385, ../sass/partials/_elementos.scss */
+#persona #boca0, #persona #boca2 {
+  opacity: 0;
+}
+
+/* line 393, ../sass/partials/_elementos.scss */
+#pageItens a {
+  background: black;
+}
+/* line 395, ../sass/partials/_elementos.scss */
+#pageItens a text {
+  font-family: 'Myriad Pro';
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 399, ../sass/partials/_elementos.scss */
+#pageItens a #tit {
+  fill: #988b6c;
+  font-size: 19px;
+}
+/* line 403, ../sass/partials/_elementos.scss */
+#pageItens a #span {
+  fill: #e6af3b;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1600px) {
+  /* line 410, ../sass/partials/_elementos.scss */
+  #pageItens a #tit {
+    fill: #988b6c;
+    font-size: 29px;
+  }
+  /* line 414, ../sass/partials/_elementos.scss */
+  #pageItens a #span {
+    fill: #e6af3b;
+    font-size: 26px;
+  }
+}
+/* line 423, ../sass/partials/_elementos.scss */
+svg#arvore05 #desaparecer {
+  -ms-transform: scale(0, 0) !important;
+  -webkit-transform: scale(0, 0) !important;
+  transform: scale(0, 0) !important;
+}
+
+	/*
+svg#arvore01 g g, svg#arvore02 g g, svg#arvore03 g g, svg#arvore04 g g{
+	@include scale(1,0);
+	@include transform-origin (bottom);
+
+}
+section.do-active > svg#arvore01  g  g ,
+section.do-active > svg#arvore02  g  g ,
+section.do-active > svg#arvore03  g  g ,
+section.do-active > svg#arvore04  g  g {
+	@include scale(1,1);
+}
+
+svg#arvore01 > g > g > polygon ,
+svg#arvore02 > g > g > polygon ,
+svg#arvore03 > g > g > polygon ,
+svg#arvore04 > g > g > polygon {
+	@include scale(0,1);
+	@include transform-origin (left bottom);
+	@include transition (inherit);
+}
+section.do-active > svg#arvore01 > g > g > polygon ,
+section.do-active > svg#arvore02 > g > g > polygon ,
+section.do-active > svg#arvore03 > g > g > polygon ,
+section.do-active > svg#arvore04 > g > g > polygon {
+	@include scale(1,1);
+}
+
+svg#arvore01 g g{	@include transition (all 1s ease-in-out 0.2s);}
+svg#arvore02 g g{	@include transition (all 1.2s ease-in-out 0.6s);}
+svg#arvore03 g g{	@include transition (all 1.6s ease-in-out 0.8s);}
+svg#arvore04 g g{	@include transition (all 1.2s ease-in-out 1s);}
+*/
+/* line 5, ../sass/style.scss */
+body {
+  background: #fbe9cb;
+  overflow: hidden;
+  font-family: 'Myriad Pro';
+  min-width: 590px;
+}
+/* line 10, ../sass/style.scss */
+body:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/filtro.png");
+  background-repeat: repeat;
+  pointer-events: none;
+  opacity: 0.233;
+  z-index: 100;
+}
+
+/* line 26, ../sass/style.scss */
+body > aside {
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  background: #f7d59c;
+  top: 0;
+}
+
+/* line 35, ../sass/style.scss */
+header {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  top: 0;
+  z-index: 89;
+  position: absolute;
+}
+
+/* line 45, ../sass/style.scss */
+header > h1 {
+  text-indent: -9999px;
+  width: 100%;
+  position: fixed;
+}
+/* line 49, ../sass/style.scss */
+header > h1.do-small {
+  max-width: 200px;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+/* line 56, ../sass/style.scss */
+.defsSvg {
+  pointer-evetns: none;
+  z-index: -1;
+  position: absolute;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+/* line 64, ../sass/style.scss */
+header > span {
+  display: inline;
+  width: 100%;
+  position: fixed;
+  bottom: 30%;
+}
+/* line 69, ../sass/style.scss */
+header > span a {
+  opacity: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 2px solid #352c07;
+  border-radius: 50%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  z-index: 50;
+  cursor: pointer;
+  text-align: center;
+  color: #352C07;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+/* line 91, ../sass/style.scss */
+header > span a.do-active {
+  opacity: 1;
+  pointer-events: initial;
+}
+/* line 95, ../sass/style.scss */
+header > span a:hover {
+  border: 2px solid black;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+}
+/* line 99, ../sass/style.scss */
+header > span a * {
+  pointer-events: none;
+}
+
+/* line 104, ../sass/style.scss */
+header > nav {
+  position: fixed;
+  float: right;
+  right: 0px;
+  top: 5vh;
+  z-index: 90;
+}
+
+/* line 113, ../sass/style.scss */
+body > section {
+  width: 100%;
+  height: 100vh;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+  z-index: 80;
+}
+/* line 118, ../sass/style.scss */
+body > section > svg {
+  max-width: 100%;
+  height: auto;
+  bottom: 0;
+  position: absolute;
+  vertical-align: bottom;
+  -webkit-transition: all 2s ease-in-out 1s;
+  -moz-transition: all 2s ease-in-out 1s;
+  -o-transition: all 2s ease-in-out 1s;
+  transition: all 2s ease-in-out 1s;
+}
+/* line 126, ../sass/style.scss */
+body > section.do-up {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-transition: all 2s linear 1s;
+  -moz-transition: all 2s linear 1s;
+  -o-transition: all 2s linear 1s;
+  transition: all 2s linear 1s;
+}
+/* line 133, ../sass/style.scss */
+body > section.do-up.do-upper > svg {
+  bottom: -32%;
+  -webkit-transition: bottom 3s ease-in-out 1s;
+  -moz-transition: bottom 3s ease-in-out 1s;
+  -o-transition: bottom 3s ease-in-out 1s;
+  transition: bottom 3s ease-in-out 1s;
+}
+/* line 137, ../sass/style.scss */
+body > section.do-up.do-upper > svg:last-of-type {
+  opacity: 1;
+}
+
+/* line 147, ../sass/style.scss */
+body > header + section > svg#arvore01 {
+  z-index: 70;
+}
+
+/* line 152, ../sass/style.scss */
+body > header + section > svg {
+  pointer-events: none;
+}
+
+ /*
+body > header + section > svg > *{
+	pointer-events:initial;
+}*/
+/* line 159, ../sass/style.scss */
+div.none {
+  display: none;
+}
+
+/* line 163, ../sass/style.scss */
+section > div {
+  display: none;
+}
+
+/* line 167, ../sass/style.scss */
+footer {
+  width: 100%;
+  height: 0px;
+  position: fixed;
+  bottom: 0;
+  z-index: 91;
+  -webkit-transition: height 0.6s;
+  -moz-transition: height 0.6s;
+  -o-transition: height 0.6s;
+  transition: height 0.6s;
+}
+/* line 174, ../sass/style.scss */
+footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/filtro2.png");
+  background-repeat: repeat;
+  z-index: -1;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+/* line 187, ../sass/style.scss */
+footer ul {
+  opacity: 0;
+  width: 960px;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  z-index: 92;
+  padding: 0 20px;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.4s 0.6s;
+  -moz-transition: opacity 0.4s 0.6s;
+  -o-transition: opacity 0.4s 0.6s;
+  transition: opacity 0.4s 0.6s;
+}
+/* line 198, ../sass/style.scss */
+footer ul li {
+  display: inline-block;
+  color: #fdeed1;
+  font-size: 14px;
+  line-height: 53px;
+  transition: all 0.3s;
+  opacity: 1;
+}
+/* line 205, ../sass/style.scss */
+footer ul li:first-child {
+  float: left;
+  text-align: left;
+}
+/* line 209, ../sass/style.scss */
+footer ul li:hover {
+  opacity: 0.8;
+}
+/* line 212, ../sass/style.scss */
+footer ul li:nth-child(2) {
+  text-align: center;
+  width: 110px;
+  height: 30px;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: 13px;
+  position: absolute;
+}
+/* line 220, ../sass/style.scss */
+footer ul li:nth-child(2) a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+/* line 227, ../sass/style.scss */
+footer ul li:nth-child(2) a:first-of-type {
+  background-image: url("../images/icons/code-pen-icon.png");
+}
+/* line 230, ../sass/style.scss */
+footer ul li:nth-child(2) a:nth-of-type(2) {
+  background-image: url("../images/icons/facebook-icon.png");
+  margin-left: 5px;
+}
+/* line 234, ../sass/style.scss */
+footer ul li:nth-child(2) a:last-of-type {
+  background-image: url("../images/icons/instagram-icon.png");
+  margin-left: 5px;
+}
+/* line 239, ../sass/style.scss */
+footer ul li:last-child {
+  float: right;
+  text-align: right;
+}
+/* line 242, ../sass/style.scss */
+footer ul li:last-child a {
+  width: 42px;
+  height: 19px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+  margin-top: 17px;
+  background: url("../images/icons/ali-logo.png");
+}
+/* line 254, ../sass/style.scss */
+footer.do-active {
+  height: 53px;
+  -webkit-transition: height 0.6s 1s;
+  -moz-transition: height 0.6s 1s;
+  -o-transition: height 0.6s 1s;
+  transition: height 0.6s 1s;
+}
+/* line 257, ../sass/style.scss */
+footer.do-active:before {
+  -webkit-transition: opacity 0.6s 1s;
+  -moz-transition: opacity 0.6s 1s;
+  -o-transition: opacity 0.6s 1s;
+  transition: opacity 0.6s 1s;
+}
+/* line 260, ../sass/style.scss */
+footer.do-active ul {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s 1.8s;
+  -moz-transition: opacity 0.4s 1.8s;
+  -o-transition: opacity 0.4s 1.8s;
+  transition: opacity 0.4s 1.8s;
+}
+
+@-moz-document url-prefix() {
+  /* line 4, ../sass/partials/_hacks.scss */
+  #portfolioLayer #closeBtn {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 8, ../sass/partials/_hacks.scss */
+  #fumaca {
+    opacity: 1;
+  }
+  /* line 10, ../sass/partials/_hacks.scss */
+  #fumaca[data-value='do-active'] {
+    opacity: 0;
+  }
+}
+
+
+
+/*alteras 25/10 */
+footer ul li:nth-child(2) a:first-of-type {
+    background-image: url(../images/icons/email-icon.png);
+}
+svg#logoGrupo {
+    margin: 10% auto 5%;
+    max-width: 40%;
+    max-height: 30vh;
+}
+
+header > h1.do-small{
+  display: none !important;
+}
+
+
+
+/*novas queries*/
+@media screen and (min-width:1500px){
+	body > section.do-up.do-upper > svg{
+		bottom: -32%;
+	}
+}
+@media screen and (max-width:1499px){
+	body > section.do-up.do-upper > svg{
+		bottom: -22%;
+	}
+}
+
+@media screen and (max-width:1300px) and (min-height:800px){
+	body > section.do-up.do-upper > svg{
+		bottom: -10%;
+	}
+}
+@media screen and (min-height:961px) and (max-width:1600px){
+	body > section.do-up.do-upper > svg{
+		bottom: -10%;
+	}
+}
+@media screen and (min-width:1201px) and (max-width:1400px) and (max-height:800px){
+	body > section.do-up.do-upper > svg{
+		bottom: -35%;
+	}
+}
+@media screen and (min-width:1101px) and (max-width:1200px) and (max-height:800px){
+	body > section.do-up.do-upper > svg{
+		bottom: -70%;
+	}
+}
+@media screen and (min-width:1001px) and (max-width:1100px) and (max-height:800px){
+	body > section.do-up.do-upper > svg{
+		bottom: -10%;
+	}
+}
+@media screen and (min-width:900px) and (max-width:1100px) and (max-height:700px){
+	body > section.do-up.do-upper > svg{
+		bottom: -35%;
+	}
+}
+
+@media screen and (max-device-width:500px){
+	body{
+		min-width:100%;
+		width:100vw;
+	}
+	body > section{
+		transform: scale(3);
+    transform-origin: 50% 65%;
+	}
+	header{
+		width:100%;
+	}
+	header > nav{
+	  position: relative;
+    margin-top: 70%;
+    z-index: 90;
+    transform: scale(2);
+	}
+	header > span a.do-active{
+		transform: translateY(-100px) scale(2);
+	}
+	header > h1.do-small{
+		max-width:none;
+	}
+	svg#logoGrupo{
+		max-width:none;
+		max-height: none;
+	}
+	footer.do-active {
+    height: 110px;
+	}
+	footer.do-active ul{
+	  transform: scale(1.5);
+    transform-origin: center top;
+	}
+}

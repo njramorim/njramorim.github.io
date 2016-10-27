@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="pt-br"> <!--<![endif]-->
+	<head>
+		<title>CloudBox</title>
+		<meta charset="utf-8">	
+		<meta name="keywords" content="">
+		<meta name="author" content="">	
+		<link rel="icon" href="img/favicon.ico type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--[if !IE 10]><!-->
+		<script>  
+			if (/*@cc_on!@*/false) {  
+				document.documentElement.className+=" ie10";  
+			}  
+		</script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		
+		<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->	
+		<!--<![endif]--> 
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			.gradient {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/selectordie.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+	</head>
+<body>
+	<header>
+		<h1>CloudBox</h1>
+		<nav>
+			<div  class="maisItens">
+				<ul>
+					<li><a href="">Cliente</a></li>
+					<li><a href="">Sistema</a></li>
+					<li><a href="">Usuário</a></li>
+				</ul>
+			</div>
+			
+			<form>
+				<label>CLIENTES</label>
+				<select>
+					<option selected disabled>Selecione um cliente</option>
+					<optgroup label="Oi Web">
+						<option>Usuário 1</option>
+						<option>Usuário 2</option>
+					</optgroup>
+				</select>	
+			</form>
+			
+			<div class="direita">	
+				<span>Jhon Doe</span>
+				<ul>
+					<li><a href="" class="add">Meus Dados</a></li>
+					<li><a href="" class="relOne">Alterar Senha</a></li>
+					<li><a href="" class="relTwo">Sair</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<aside>
+			
+			<h2>Escolha um Serviço</h2>
+			<div>
+				<ul>
+					<li class="blue"><a data-name="" class="">Mail Service</a>
+						<ul>
+							<li><a href="" class="icon01">Cadastrar e-mail</a></li>
+							<li><a href="" class="icon02">Relatório e-mails</a></li>
+							<li><a href="" class="icon03">Relatório Bounce</a></li>
+						</ul>
+					</li>
+					<li class="blue"><a data-name="" >Praesent Vitae Dolor</a></li>
+					<li class="blue"><a data-name="" >Lorem Ipsum</a></li>
+					<li class="yellow"><a data-name="" >Convallis Sagittis</a></li>
+					<li class="yellow"><a data-name="" >Vestibulum</a></li>
+					<li class="green"><a data-name="" >Tristique Lacinia</a></li>
+					<li class="purple"><a data-name="">Maecenas</a></li>
+					<li class="purple"><a data-name="" >Scelerisque in Ornare</a></li>
+				</ul>
+			</div>
+		</aside>
+		<div class="content">
+			<div>
+				<h2>Cadastrar Novo Usuário</h2>
+				<h3 class="icoPessoa">Cadastro</h3>
+				<form name="cadastroNovoUsuario">
+					<label>Nome</label><input type="text" class="wid380"></input>
+					<label >Telefone</label>
+					<input type="phone" class="wid40"></input>
+					<input type="phone" class="wid120"></input>
+					
+					<label>e-mail</label><input class="wid380" type="mail"></input>
+					<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nível</label> 
+					<select  class="wid170">
+						<option selected disabled>Selecione um nível</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<label >Senha</label><input class="wid100" type="password"></input>
+					<label class="bigger">Confirmar Senha</label><input class="wid100" type="password"></input>
+					<input class="wid210" type="submit" value="cadastrar"></input>
+				</form>
+				
+				<h3 class="icoBuscar">Buscar</h3>
+				<form name="cadastroNovoUsuario">
+					<label>Nome</label><input type="text" class="wid380"></input>
+					<label class="big" >Data início</label>
+					<input type="date" class="wid150"></input>
+					
+					<label class="noMargin">e-mail</label><input class="wid380" type="mail"></input>
+					<label class="big">Data fim</label> <input class="wid150" type="date"></input>
+					
+					<label class="noMargin">Nível</label><select  class="wid170">
+						<option selected disabled>Selecione um nível</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<label class="bigMargin">Ativo</label>
+					<label><input type="radio" name="ativo" value="sim"></input> Sim</label>
+					<label><input type="radio" name="ativo"  value="nao"></input> Não</label>
+					<input class="wid210" type="submit" value="buscar"></input>
+				</form>
+				
+				<h3 class="icoBuscar2">Resultado da Busca</h3>
+				<table>
+					<tr>
+						<th>Nome</th>
+						<th>E-mail</th>
+						<th>Telefone</th>
+						<th>Nível</th>
+						<th class="mini">Alterar</th>
+					</tr>
+					<tr>
+						<td>John Doe</td>
+						<td>jdoe@email.com</td>
+						<td class="center">11 9876-6543</td>
+						<td class="center">Lorem</td>
+						<td class="center"><span>Alterar</span></td>
+					</tr>
+					<tr>
+						<td>John Doe</td>
+						<td>jdoe@email.com</td>
+						<td class="center">11 9876-6543</td>
+						<td class="center">Lorem</td>
+						<td class="center"><span>Alterar</span></td>
+					</tr>
+					<tr>
+						<td>John Doe</td>
+						<td>jdoe@email.com</td>
+						<td class="center">11 9876-6543</td>
+						<td class="center">Lorem</td>
+						<td class="center"><span>Alterar</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<ul>
+			<li><a href="">ezconet/cloudbox</a></li>
+			<li><a href="">Desenvolvido por Ezconet</a></li>
+			<li><a href="">www.ezconet.com.br</a></li>
+			<li class="politica"><a href="">Política de Privacidade</a></li>
+			<li class="telMail"><a href="">Telefone: (11) 3871-8550</a> / <a href="">E-mail: servicedesk@ezconet.com.br</a></li>
+			<li class="copy"><a href="">Copyright ©</a></li>
+		</ul>
+	</footer>
+
+	<script src="js/placeholders.jquery.min.js"></script>
+	<script src="js/selectordie.min.js"></script>
+	<!--[if !IE]> -->
+		<script src="js/others.js"></script>
+	<!-- <![endif]-->
+	
+	<script src="js/scripts.js"></script>
+	<!-- cdn for modernizr, if you haven't included it already -->
+	<script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+	<!-- polyfiller file to detect and load polyfills -->
+	<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+	<script>
+		webshims.setOptions('waitReady', false);
+		webshims.setOptions('forms-ext', {types: 'date'});
+		webshims.polyfill('forms forms-ext');
+	</script>
+</body>
+</html>

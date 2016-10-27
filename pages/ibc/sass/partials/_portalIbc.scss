@@ -1,0 +1,176 @@
+.portalIbc{
+	.menuMobile{
+		position:absolute;
+		z-index:12;
+		height:62px;
+		min-height:62px;
+		background-color: $Mercury2;
+		border-top:0px;
+		nav{
+			height:100%;
+			ul{
+				padding-left:277px;
+				margin-top:7px;
+				li{
+					margin-top:0px;
+					color: $CloudBurst;
+					&:before{
+						background: $CloudBurst;
+					}
+					&:hover{
+						color: $White;
+					}
+					a{
+						padding-top:13px;
+					}
+					&:nth-child(7) a{
+						padding-top:0px;
+					}
+					&:nth-child(2) a{
+						@include border-radius(2px 2px 0px 0px);
+					}
+					ul{
+						padding-left:12px;
+						margin-top:0px;
+						@include border-radius (0px 2px 2px 2px);
+						li{
+							@include transition ($tranAll);
+							color: $White;
+						}
+					}
+				}	
+			}
+		}
+	}
+	.menuMobile nav ul.geral > a{
+		background-image: url("../images/icons/logo-mobile2.png");
+		background-repeat: no-repeat;
+		width:113px;
+		height:41px;
+		top:5px;
+	}
+	header{
+		margin-top: 62px;
+		height:155px;
+		h1 {
+			width:auto;
+			height:auto;
+			margin-top:18px;
+			a{
+				background:none;
+				color: $CloudBurst;
+				text-indent:0px;
+				font-weight:600;
+				font-size: $fontTituloMaior;
+				span{
+					font-weight:300;
+				}
+			}
+		}
+		.socialLinks{
+			float: right;
+			margin-right:30px;
+			margin-top:33px;
+		}
+		nav{
+			height:48px;
+		}
+		nav ul{
+			position:relative;
+
+		}
+		nav li:before{
+			background: $White;
+		}
+		nav li a{
+			padding:0 40px;
+			font-size: 16px;
+		}
+		nav li:first-child{
+			position:absolute;
+			right:2px;
+			width:265px;
+			&:before{
+				display:block;
+			}
+			a{
+				width:100%;
+				text-align:left;
+				padding:0 20px 0 30px;
+				&:after{
+					right:24px;
+				}
+			}
+			ul{
+				margin-left:-155px;
+				height:0px;
+				@include border-radius (2px 0px 2px 2px);
+				ul{
+					width:32%;
+					display:inline-block;
+					background:transparent;
+					margin-left:1%;
+					vertical-align:top;
+					padding:0px;
+				}
+				li{
+					&:first-child{
+						position:relative;
+						right:0px;
+						width:auto;
+						&:before{
+							display:none;
+						}
+					}
+					a{
+						font-size:13px;
+						width:100%;
+					}
+				}
+			}
+			&:hover{
+				ul{
+					height:auto;
+				}
+			}
+		}
+		nav li:nth-child(2){
+			&:before{
+				display:none;
+			}
+		}
+		nav li:last-child{
+
+		}
+	}
+	header ~ section.destaqueSec + section{
+		margin-top:0px;
+	}
+	.textTitulo{
+		text-align:left;
+		a:hover{
+			border-bottom:2px solid $CloudBurst;
+		}
+	}
+	header > nav > ul{
+		padding:0px;
+		& > li{
+			padding:0;
+			margin:0 10px;
+			&:before{
+				left:-10px;
+			}
+			&:first-child{
+				margin:0;
+				right:2px;
+				width: 265px;
+				a{
+					width:100%;
+				}
+			}
+			&:nth-child(2){
+				margin:0 10px 0 0;
+			}
+		}
+	}
+}

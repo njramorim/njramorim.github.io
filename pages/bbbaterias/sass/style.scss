@@ -1,0 +1,69 @@
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/elementos';
+@import 'partials/sections';
+
+body{
+	width:100%;
+	min-width:$width-fix;
+	font-family: $fontPadrao;
+}
+
+header{
+	width:100%;
+	min-width:$width-fix;
+	@include headerElements;
+}
+
+header + section{
+	margin-top:30px;
+}
+
+header.do-fix + section{
+
+}
+
+body > section{
+	width:100%;
+	min-width: $width-fix;	
+	position:relative;
+	& ~ section{
+		margin-top:50px;
+	}
+	& > div, & > ul{
+		width: $width-fix;
+		margin:0 auto;
+		position:relative;
+	}
+	& > div.menor{
+		overflow:hidden;
+		& > ul, & > div{
+			width:690px;
+			margin:0;
+			display:inline-block;
+			vertical-align:top;
+		}
+		aside{
+			width:267px;
+			display:inline-block;
+			vertical-align:top;
+			margin-left:66px;
+			.twitter-follow-button{
+				margin:35px 0;
+			}
+		}
+	}
+}
+
+footer{
+	margin-top:90px;
+	height:490px;
+	@include linear-gradient (127px, $WildSand, 127px, $Gallery);
+	& > form, & > div{
+		width: $width-fix;
+		margin:0 auto;
+	}
+}
+
+@import 'partials/queries';
+@import 'partials/hacks';

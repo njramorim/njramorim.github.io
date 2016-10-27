@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'simplon_bp_mediummedium';
+    src: url('simplonbp-medium-webfont.eot');
+    src: url('simplonbp-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('simplonbp-medium-webfont.woff') format('woff'),
+         url('simplonbp-medium-webfont.ttf') format('truetype'),
+         url('simplonbp-medium-webfont.svg#simplon_bp_mediummedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexolight';
+    src: url('flexo-light-webfont.eot');
+    src: url('flexo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('flexo-light-webfont.woff2') format('woff2'),
+         url('flexo-light-webfont.woff') format('woff'),
+         url('flexo-light-webfont.ttf') format('truetype'),
+         url('flexo-light-webfont.svg#flexolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexodemi';
+    src: url('flexo-demi-webfont.eot');
+    src: url('flexo-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('flexo-demi-webfont.woff2') format('woff2'),
+         url('flexo-demi-webfont.woff') format('woff'),
+         url('flexo-demi-webfont.ttf') format('truetype'),
+         url('flexo-demi-webfont.svg#flexodemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'flexomedium';
+    src: url('flexo-medium-webfont.eot');
+    src: url('flexo-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('flexo-medium-webfont.woff2') format('woff2'),
+         url('flexo-medium-webfont.woff') format('woff'),
+         url('flexo-medium-webfont.ttf') format('truetype'),
+         url('flexo-medium-webfont.svg#flexomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flexoheavy';
+    src: url('flexo-heavy-webfont.eot');
+    src: url('flexo-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('flexo-heavy-webfont.woff2') format('woff2'),
+         url('flexo-heavy-webfont.woff') format('woff'),
+         url('flexo-heavy-webfont.ttf') format('truetype'),
+         url('flexo-heavy-webfont.svg#flexoheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

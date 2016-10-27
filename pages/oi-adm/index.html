@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="pt-br"> <!--<![endif]-->
+	<head>
+		<title>ADM TIM</title>
+		<meta charset="utf-8">	
+		<meta name="keywords" content="">
+		<meta name="author" content="">	
+		<link rel="icon" href="img/favicon.ico type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--[if !IE 10]><!-->
+		<script>  
+			if (/*@cc_on!@*/false) {  
+				document.documentElement.className+=' ie10';  
+			}  
+		</script>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.placeholder.js"></script><!--Input Placeholder-->
+		<script src="js/validate.js"></script><!--validate-->
+		<script src="js/jquery.mousewheel.min.js"></script><!--mousewhell-->
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script><!--scroll-->
+		<script src="js/selectordie.min.js"></script><!--select-->
+		
+		<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->	
+		<!--<![endif]--> 
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			.gradient {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts/font.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/selectordie.css" />
+	</head>
+
+<body class="geral">
+		<div class="header">
+			<ul>
+				<li>
+					<h1>Oi</h1>
+					<hr/>
+				</li>
+				<li>			
+					<form>
+						<input class="ie8FIXheaderINPUT" type="text" placeholder="Busca"/>
+							<select class="ie8FIXheaderSELECT selectdead" >
+								<option value="00" disabled selected>Número do Pedido</option><br>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+							</select>
+						<button>OK</button>
+					</form>
+				</li>
+				<li  class="ie8fixHEADERlast">
+					<p>Jhon Doe</p>
+					<div class="frame">
+						<img src="img/avatar.jpg"/>
+						<div class="btn-sair">
+							Sair
+						</div>
+					</div>	
+				</li>
+			</ul>
+		</div>
+		<div id="breadcrumb">
+			<p>
+				<a href="#">Home </a> > <a href="#">Time Line </a> > <a href="#">Time Line</a>
+			</p>
+		</div>
+			<div class="clear"></div>
+		<div id="menuBG"></div>	
+		<div id="menu">
+			<ul>
+				<li class="first"><h2>Timeline</h2>
+					<ul class="semMais"><h3 class="semMais ico1">Timeline</h3></ul>
+					<ul class="semMais"><h3 class="semMais ico2"">Timeline Correios</h3></ul>
+					<ul class="semMais"><h3 class="semMais">Timeline Diário</h3></ul>	
+					<ul class="semMais"><h3 class="semMais">Timeline Outdoor</h3></ul>	
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul class="semMais"><h3 class="semMais ico1">Timeline</h3></ul>
+					<ul class="semMais"><h3 class="semMais ico2"">Timeline Correios</h3></ul>
+					<ul class="semMais"><h3 class="semMais">Timeline Diário</h3></ul>	
+					<ul class="semMais"><h3 class="semMais">Timeline Outdoor</h3></ul>	
+				</li>		
+				<li class="first"><h2>Timeline</h2>
+					<ul class="semMais"><h3 class="semMais ico1">Timeline</h3></ul>
+					<ul class="semMais"><h3 class="semMais ico2"">Timeline Correios</h3></ul>
+					<ul class="semMais"><h3 class="semMais">Timeline Diário</h3></ul>	
+					<ul class="semMais"><h3 class="semMais">Timeline Outdoor</h3></ul>	
+				</li>
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3 class="mais">Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3 class="mais">Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3 class="mais">Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3>Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3>Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>				
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3>Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3>Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>				
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>		
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3>Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3>Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>				
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3>Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3>Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>				
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3>Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3>Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>				
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>
+				<li class="first"><h2>Gerencial</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4 class="ico1">Logística</h4></li>					
+						<li><h4 class="ico2">Planilhão</h4></li>
+					</ul>			
+					<ul><h3>Relatório de Vendas2</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>				
+					<ul><h3>Relatório de Vendas3</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>				
+				<li class="first"><h2>Relatório Vendas</h2>
+					<ul><h3>Relatório de Vendas</h3>
+						<li><h4>Logística</h4></li>					
+						<li><h4>Planilhão</h4></li>
+					</ul>
+				</li>			
+				<li class="first"><h2>Timeline</h2>
+					<ul><h3>Timeline</h3>
+						<li><h4>Timeline Correios</h4></li>					
+						<li><h4>Timeline Diário</h4></li>
+						<li><h4>Timeline Outdoor</h4></li>
+					</ul>
+				</li>					
+			</ul>
+		</div>
+	<div id="contentWRAP">
+		<div id="conteudoGERAL">
+		<h1>TIME LINE<span>Time Line Visão 6-6 horas</span></h1>
+			<div class="filtrosWRAP">
+				<div class="filtrosBOX">
+				<form>
+					<div class="left1">
+						<label>Canal:</label><div class="clear"></div>
+							<select class="selectdead">								
+								<option value="00" disabled selected>Selecione</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+							</select>	
+								<div class="clear" style="margin-top:8px;"></div>
+						<label>Empresas:</label><div class="clear"></div>
+							<select class="selectdead">								
+								<option value="00" disabled selected>Selecione</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+							</select>
+								<div class="clear" style="margin-top:8px;"></div>
+						<label>Tipo:</label>
+							<input type="radio" value="ativo" class="primeiro"><span class="valor">Ativo</span></input>
+							<input type="radio" value="receptivo"><span class="valor">Receptivo</span></input>
+								<div class="clear" style="margin-top:8px;"></div>
+						<label>Regiões:</label>
+							<input type="checkbox" class="primeiro"><span class="valor">1</span></input>
+							<input type="checkbox"><span class="valor">2</span></input>
+							<input type="checkbox"><span class="valor">3</span></input>
+							 <div class="clear"></div>
+					</div>	
+					<div class="right1">
+						<label>Operações:</label><div class="clear"></div>
+						<select class="multiplo" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+						</select>
+					</div>	<div class="clear"></div>
+					<div class="left1">
+						<div class="left">
+							<label class="padding">Regionais:</label><div class="clear"></div>
+							<select class="multiplo mini" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							</select>
+						</div>	
+						<div class="right">
+							<label class="padding">Estados:</label><div class="clear"></div>
+							<select class="multiplo max" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							</select>
+						</div>
+					</div> 
+					<div class="right1">
+						<label class="padding">Lojas:</label><div class="clear"></div>
+						<select class="multiplo mini" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+						</select>
+					</div>	<div class="clear"></div>	
+					<div class="left1 ultimo">
+						<div class="left">
+							<label class="padding">Regionais:</label><div class="clear"></div>
+							<select class="multiplo mini mini2" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							</select>
+						</div>	
+						<div class="right">
+							<label class="padding">Estados:</label><div class="clear"></div>
+							<select class="multiplo max max2" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							</select>
+						</div>
+					</div> 
+					<div class="right1 ultimo">
+						<label class="padding">Lojas:</label><div class="clear"></div>
+						<select class="multiplo mini mini2" multiple="multiple">
+							<option>Opção 01</option>
+							<option>Opção 02</option>
+							<option>Opção 03</option>
+							<option>Opção 04</option>
+							<option>Opção 05</option>
+							<option>Opção 06</option>
+							<option>Opção 07</option>
+							<option>Opção 08</option>
+							<option>Opção 09</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+							<option>Opção 10</option>
+						</select>
+					</div>	<div class="clear"></div>							
+				</div> <div class="clear"></div>
+					<div class="outside">
+						<label>Listar:</label>
+							<input type="checkbox" class="primeiro maior"><span class="valor">Listar resumo</span></input>
+							<input type="checkbox" class="maior"><span class="valor">Excel</span></input>
+							<input type="checkbox" class="medio"><span class="valor">Correio</span></input>
+							<select  class="selectdead">								
+								<option value="00" selected>Todos os Pedidos</option>
+								<option value="01">Listar resumo</option>
+								<option value="02">Excel</option>
+								<option value="03">Correio</option>
+							</select>
+							<button>Listar</button>
+					</div>		
+				</form>	
+			</div>
+		</div>
+	</div>	
+		<div id="footerGERAL">
+			<ul>
+				<li>
+					<h3>NÍVEL 10</h3>
+					<p>Último acesso: 20/03/2014 14:49:02</p>
+					<p>Conectado desde: 24/03/2014 11:42:27</p>
+				</li>
+				<li class="links">
+					<a href="#">Política de Privacidade</a>
+					<a href="#">Desenvolvido por Ezconet</a>     
+					<a href="#">www.oi.com.br</a>
+				</li>
+				<li class="ie8fixFOOTERgeralCOPYRIGHT">© Copyright 2014</li>			
+			</ul>
+		</div>
+<script>//placeholder ie8
+	$(document).ready(function() {
+		$('input, textarea').placeholder();
+	});
+</script>
+<script>//scrollbar
+    (function($){
+        $(window).load(function(){
+            $('#menu, ul.selectUL').mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+<script>//select
+	$("select.selectdead").selectOrDie();
+</script>
+<script>//ie8 checked fix
+        $('.INPUTERO').click( function () {
+			if ($(this).hasClass('checked')){
+				$(this).removeClass('checked');
+			}
+			else {
+				$(this).addClass('checked');
+			}
+        });
+</script>
+<script>//btn sair
+	$(document).ready(function(){
+		$('.frame').click(function (){
+			$('.btn-sair').slideToggle();		
+		});
+		$('.btn-sair').click(function(e) {
+			e.stopPropagation();
+		});
+	});	
+</script>
+<script>//menu open
+	$('#menu ul li.first').click(function() {
+		$(this).toggleClass('menufirstATIVO').children('h2').toggleClass('menuh2ATIVO');		
+	});
+	$('#menu ul li.first ul').click(function(e) {
+		e.stopPropagation();
+		$(this).toggleClass('menufirstATIVO').children('h3').toggleClass('menuh3ATIVO');
+	});		
+	$('#menu ul li.first ul.semMais').click(function(e) {
+		e.stopPropagation();
+		$('#menu ul li.first ul.semMais').removeClass('menufirstATIVO');
+		$('#menu ul li.first ul li').removeClass('ativado');
+		$(this).addClass('menufirstATIVO');
+	});	
+	$('#menu ul li.first ul li').click(function(e) {
+		e.stopPropagation();
+		$('#menu ul li.first ul.semMais').removeClass('menufirstATIVO');
+		$('#menu ul li.first ul li').removeClass('ativado');
+		$(this).addClass('ativado');
+	});		
+
+</script>	
+	
+</body>
+</html>

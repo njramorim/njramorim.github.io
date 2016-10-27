@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'teuton_normalregular';
+    src: url('teutonnormal-webfont.eot');
+    src: url('teutonnormal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('teutonnormal-webfont.woff') format('woff'),
+         url('teutonnormal-webfont.ttf') format('truetype'),
+         url('teutonnormal-webfont.svg#teuton_normalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teuton_normalbold';
+    src: url('teutonnormal-bold-webfont.eot');
+    src: url('teutonnormal-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('teutonnormal-bold-webfont.woff') format('woff'),
+         url('teutonnormal-bold-webfont.ttf') format('truetype'),
+         url('teutonnormal-bold-webfont.svg#teuton_normalbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'teuton_weissregular';
+    src: url('teutonweiss-webfont.eot');
+    src: url('teutonweiss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('teutonweiss-webfont.woff') format('woff'),
+         url('teutonweiss-webfont.ttf') format('truetype'),
+         url('teutonweiss-webfont.svg#teuton_weissregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

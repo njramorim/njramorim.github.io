@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" lang="pt-br"> <!--<![endif]-->
+	<head>
+		<title>Oi Ocorrências</title>
+		<meta charset="utf-8">	
+		<meta name="keywords" content="">
+		<meta name="author" content="">	
+		<link rel="icon" href="img/favicon.ico type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--[if !IE 10]><!-->
+		<script>  
+			if (/*@cc_on!@*/false) {  
+				document.documentElement.className+=" ie10";  
+			}  
+		</script>
+		<!--<![endif]--> 
+		<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->	
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			.gradient {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+		
+		<script src="js/modernizr.min.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+<body>
+	<header>
+		<h1><a href="home.html">Oi Ocorrência</a></h1>
+		<form class="search">
+			<input type="search" placeholder="nº ocorrência"/><button type="button"></button>
+			<input type="search" placeholder="nº pedido"/><button type="button"></button>
+		</form>
+		<ul>
+			<li class="ocorre"><p><span>2</span>Ocorrências</p></li>
+			<li class="data"><p></p></li>
+			<li class="hora"><p></p></li>
+		</ul>
+	</header>
+	<aside>
+		<div class="persona">
+			<span>IP: 192.168.0.87</span>
+			<p><b>Oi, John Joe.</b> Seja bem-vindo ao Sistema Ocorrência.</p>
+			<a href=""><i>sair</i></a>
+		</div>
+		<ul>
+			<span>Menu</span>
+			<li><a href="">Monitor</a></li>
+			<li><a  class="do-ativo" href="">Abrir Chamado</a></li>
+			<li><a href="">Meus Pendentes</a></li>
+			<li><a href="">Pendentes Setor</a></li>
+		</ul>
+	</aside>
+	<section class="geral">
+		<div class="wrapper wid805">
+			<h1>Detalhes da Ocorrência</h1>
+			<h2 class="dadosUser">
+				<ul>
+					<li><span><b>Ocorrência:</b>  54487</span></li>
+					<li><span><b>Contato:</b> Jonh Joe</span>
+					</li><li><span><b>Procedente:</b> Procedente</span></li>
+					<li><span><b>Setor/Depto:</b>  Desenvolvimento</span></li>
+				</ul>
+				<ul>
+					<li><span><b>Data Abertura:</b> 04/12/2014 15:54:00</span></li>
+					<li><span><b>Email:</b> john@ezconet.com.br</span>
+					</li><li><span><b>Tipo:</b> Incidente</span></li>
+					<li><span><b>Prioridade:</b> Não bloqueante</span></li>
+				</ul>
+				<ul>
+					<li><span><b>Data Finalizada:</b> Dec 5 2014 11:00</span></li>
+					<li><span><b>Telefone:</b> 4321-9876</span>
+					</li><li><span><b>Status:</b> 2º Nível</span></li>
+					<li><span class="vermelho"><b>SLA:</b> Até 36h</span></li>
+				</ul>
+			</h2>
+			<form class="formGeral chamado">
+				<label>Pedidos Afetados
+					<button class="adicionarPedidos" type="button">
+						Adicionar Pedidos
+					</button>
+				</label>
+				<label>Projeto
+					<select class="selectpicker" id="alwaysShow">
+						<option selected disabled>selecione</option>
+						<option>Mustard</option>
+						<option>Ketchup</option>
+						<option>Relish</option>
+					</select>
+				</label>
+				<label>Sistema
+					<select class="selectpicker">
+						<option selected disabled>selecione</option>
+						<option>Mustard</option>
+						<option>Ketchup</option>
+						<option>Relish</option>
+					</select>
+				</label>
+				
+				<p class="subTit mTop">Anexos</p>
+				<div class="fileWrap file2">
+					<input type="file" id="myFile" value=""></input>
+				</div>
+				<ul class="infos">
+					<li>Nome
+						<span data-value="item001">lorem_ipsum.doc</span>
+						<span data-value="item002">suspendisse_ullamcorper.xls</span>
+					</li>
+					<li>Tamanho
+						<span data-value="item001">135K</span>
+						<span data-value="item002">2MB</span>
+					</li>
+					<li>Excluir
+						<span data-value="item001"><a>x</a></span>
+						<span data-value="item002"><a>x</a></span>
+					</li>
+				</ul>
+			</form>
+			<p class="subTit mTop">Informações de Troca de Status</p>
+			<table class="noBorders">
+			  <tr>
+				<th class="smaller"></th>
+				<th class="bigger">Status</th>
+				<th>Data Entrada</th>
+				<th>Data Entrada</th>
+			  </tr>
+			  <tr>
+				<td>4</td>
+				<td>Status</td>
+				<td>02/12/2014 09:32:00</td>
+				<td>02/12/2014 09:32:00</td>
+			  </tr>
+			  <tr>
+				<td>3</td>
+				<td>Finalizado</td>
+				<td>02/12/2014 09:32:00</td>
+				<td>02/12/2014 09:32:00</td>
+			  </tr>
+			  <tr>
+				<td>2</td>
+				<td>Status</td>
+				<td>02/12/2014 09:32:00</td>
+				<td>02/12/2014 09:32:00</td>
+			  </tr>
+			  <tr>
+				<td>1</td>
+				<td>2º Nível</td>
+				<td>02/12/2014 09:32:00</td>
+				<td>02/12/2014 09:32:00</td>
+			  </tr>
+			</table>
+			<p class="subTit mTop">Informações do Problema</p>
+			<table class="noBorders">
+			  <tr>
+				<th class="smaller"></th>
+				<th class="bigger2">Status</th>
+				<th class="smaller"></th>
+			  </tr>
+			  <tr>
+				<td>0</td>
+				<td>
+					<span><b>05/12/2014 11:34:00    Pedro João</b><br>
+					Vivamus volutpat dolor eget imperdiet tincidunt.</span>
+				</td>
+				<td>1</td>
+			  </tr>
+			  <tr>
+				<td>1</td>
+				<td>
+					<span><b>05/12/2014 11:34:00    Pedro João</b><br>
+					Vivamus volutpat dolor eget imperdiet tincidunt.</span>
+				<td>0</td>
+			  </tr>
+			</table>
+			<button class="addInfos" type="button">
+				Adicionar Informações
+			</button>
+		</div>
+	</section>
+	<footer>
+		<ul>
+			<li><a href="#" target="_blank">Política de Privacidade</a></li>
+			<li><a href="#" target="_blank">Desenvolvido por Ezconet</a></li>
+			<li class="left">
+				<img src="images/ezco-logo.png"/>
+				<span>© Copyright</span>
+			</li>
+		</ul>
+	</footer>
+	<script src="js/placeholders.jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

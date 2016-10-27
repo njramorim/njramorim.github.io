@@ -1,0 +1,195 @@
+/*---------------------RESET CSS---------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-decoration:none;
+	color:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration:none;color:none;} a:visited{text-decoration:none; color:none;} a:active{text-decoration:none;color:none;}
+
+
+
+
+body{
+background: #f7f7f7;
+
+}
+
+
+
+
+.titulo-box{
+font-family: arial;
+font-weight: bold;
+font-size: 20px;
+color: #747a7e;
+margin-top:21px;
+margin-bottom:19px;
+margin-left:19px;
+}
+
+
+/*-----------------------WRAPPER CONTEUDO---------------------*/
+
+#conteudo-wrapper{
+margin: 0 auto;
+
+height:100%;
+}
+
+/*-------------------fim wrapper conteudo--------------------*/
+
+/*-------------------------------------------------------------/
+
+
+/*-------------------BOX GERAL INTRO----------------------*/
+
+.box-geral-intro{
+
+width:485px;
+height: 212px;
+background: #f2f2f2;
+margin:0 auto;
+border: 1px;
+border-style: solid;
+border-color: #cccccc;
+border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+padding-bottom:20px;
+margin-top:87px;
+ box-sizing: none;
+    -moz-box-sizing: none;
+}
+
+.faixa-branca-sup-box-intro{
+background: #ffffff;
+color: #ffffff;
+height:1px;
+width:477px;
+margin: 0 auto;
+}
+
+.faixa-cinza-sup-box-intro{
+background: #dedede;
+color: #dedede;
+height:1px;
+width:445px;
+margin: 0 auto;
+}
+
+.usuario-intro{
+width:189px;
+height:21px;
+font-family:verdana;
+font-weight: regular;
+font-size:12px;
+color:#747a7e;
+padding-left:5px;
+float:left;
+margin-top:54px;
+margin-left:54px;
+outline:none;
+border:1px solid #cccccc;
+line-height:21px;
+}
+
+.senha-intro{
+width:129px;
+height:21px;
+font-family:verdana;
+font-weight: regular;
+font-size:12px;
+color:#747a7e;
+padding-left:5px;
+float:left;
+margin-top:54px;
+margin-left:10px;
+outline:none;
+border:1px solid #cccccc;
+line-height:21px;
+}
+
+.ok-intro-btn{
+width:23px;
+height:23px;
+font-family:verdana;
+font-weight: regular;
+font-size:11px;
+color:#868c91;
+background:url('../img/btn-login-ok2.png');
+margin-top:55px;
+margin-left:9px;
+outline:none;
+border:none;
+
+}
+ 
+.ok-intro-btn:hover{background:url('../img/btn-login-ok2.png')} .ok-intro-btn:active{background:url('../img/btn-login-ok3.png')}
+
+.ok-intro-btn p{margin-left:-5px;} 
+
+.texto-bot-box-intro{
+font-size: 10px;
+color: #747a7e ;
+font-family:verdana;
+margin: 0 auto;
+margin-top:49px;
+height:30px;
+width:235px;
+}
+
+.texto-bot-box-intro a{
+color: #747a7e ;
+
+}
+
+
+
+/*-----------------fim box geral intro-------------------------*/
+
+/*-------------------------------------------------------------*/
+
+

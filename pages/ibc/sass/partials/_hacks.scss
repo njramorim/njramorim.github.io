@@ -1,0 +1,25 @@
+//hacks
+.ie11, .ie10, .ie9 {
+	ul.siteMap li a::before{
+		content:'> ';
+	}
+}
+.ie9 {
+
+}
+.win.gecko {
+
+}
+
+@-moz-document url-prefix() { 
+	form button, {
+		padding-left:10px;
+	}
+	footer section + section form button{
+		padding:0px 20px 0px 5px;
+	}
+	aside.compartilhar button::after{
+		letter-spacing: 0.5px;
+		margin-top:47px;
+	}
+}

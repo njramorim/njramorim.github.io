@@ -1,0 +1,833 @@
+//icons
+@mixin sprite ($posX, $posY){
+	background-image: url('../images/icons/sprite.png');
+	background-position: $posX $posY;
+	background-repeat: no-repeat;
+}
+@mixin midiasSociais{
+	display:inline-block;
+	li{
+		display:inline-block;
+		position:relative;
+		width:37px;
+		height:37px;
+		margin-left:5px;
+		&:first-child{
+			margin-left:0px;
+		}	
+	}
+	a{
+		display:block;
+		width:100%;
+		height: 100%;
+		@include transition ($tranAll);
+	}
+	a[alt=facebook]{@include sprite (0, -25px);}
+	a[alt=twitter]{@include sprite (-42px, -25px);}
+	a[alt=googlePlus]{@include sprite (-84px, -25px);}
+	a[alt=youtube]{@include sprite (-126px, -25px);}
+	a:hover{@include opacity (0.8)};
+}
+
+.bateria{
+	width:235px;
+	height:116px;
+	background: $White;
+	border:5px solid $Black;
+	position:relative;
+	@include animation-name (showBattery);
+	@include animation-duration (2s);
+	&:before{
+		content:'';
+		position:absolute;
+		display:block;
+		width:23px;
+		height:49px;
+		border:5px solid $Black;
+		background: $White;
+		border-left:0px;
+		right:-33px;
+		top:25px;
+		@include animation-name (showBatteryBefore);
+		@include animation-duration (2.8s);
+	}
+	.traco{
+		position:absolute;
+		display:block;
+		background: $Black;
+		height:6px;
+		box-sizing: content-box;
+		border:6px solid $White;
+		border-left:0px;
+		border-right:0px;
+		width:287px;
+		@include transform (perspective(999px) rotate(45deg));
+		top:42px;
+		left:-30px;
+		@include animation-name (showTraco);
+		@include animation-duration (3.8s);
+	}
+}
+
+//textos & imagens
+	hr{
+		border:0px;
+		height:1px;
+		width:100%;
+		background: $Silver;
+	}
+
+.tituloSec{
+	color: $Black;
+	font-weight: 300;
+	font-size: $fSizeMaior + 3px;
+	margin-bottom:20px;
+	position:relative;
+	padding-bottom:4px;
+	&:after{
+		content:'';
+		position:absolute;
+		left:0;
+		bottom:0;
+		height:1px;
+		width:100px;
+		background: $Black;
+	}
+}
+
+.buscaTexto{
+	color: $MineShaft;
+	font-weight:700;
+	font-size: $fSizeMaior;
+	padding-top:20px;
+	margin-bottom:50px;
+}
+
+.categoriaTexto{
+	color: $BrandyPunch;
+	font-weight:600;
+	font-size: $fSizeGigante + 8px;
+	margin-bottom:50px;
+}
+
+.postTitulo{
+	color: $BrandyPunch;
+	font-weight: 600;
+	font-style: italic;
+	font-size: $fSizeGigante + 8px;
+	line-height: $fSizeGigante + 8px;
+}
+
+@mixin figureDestaque ($width, $height){
+	width: $width;
+	height: $height;
+	overflow:hidden;
+	position:relative;
+	img{
+		width:100%;
+		height:auto;
+		position:absolute;
+		top:0;
+		left:0;
+		@include transition (all 0.4s ease-in-out);
+	}
+	figcaption{
+		left:20px;
+		bottom:20px;
+		position:absolute;
+		max-width:85%;
+		color: $White;
+		font-style: italic;
+		font-size: $fSizeMaior;
+		line-height: $fSizeMaior + 2px ;
+		span{
+			font-style:normal;
+			font-size:  $fSizeGrande;
+			line-height: $fSizeGrande;
+			letter-spacing: -0.25px;
+			display:block;
+			padding-bottom:5px;
+			margin-bottom:2px;
+			position:relative;
+			&:after{
+				content:'';
+				position:absolute;
+				display:block;
+				left:0;
+				bottom:0;
+				background: $White;
+				width:30px;
+				height:1px;
+			}
+		}
+	}
+}
+
+@mixin postagens{
+	width:305px;
+	vertical-align:top;
+	height:370px;
+	position:relative;
+	display:inline-block;
+	a{
+		width:100%;
+		height:100%;
+		display:block;
+	}
+	figure{
+		width:100%;
+		height:181px;
+		position:relative;
+		overflow:hidden;
+		img{
+			width:100%;
+			height:auto;
+			@include transition (all 0.4s ease-in-out);
+		}
+	}
+	p{
+		margin-top:15px;
+		max-height:170px;
+		color: $Black;
+		font-size: $fSizeGrande;
+		font-weight:400;
+		line-height: $fSizeGrande + 5px;
+		& > span{
+			font-weight:600;
+			font-size: $fSizeMenor + 2px;
+			line-height: $fSizeMenor + 2px;
+			display:block;
+			padding-bottom:9px;
+			margin-bottom:7px;
+			position:relative;
+			&:after{
+				content:'';
+				position:absolute;
+				display:block;
+				bottom:0;
+				left:0;
+				width:34px;
+				height:1px;
+				background: $Black;
+			}
+			& + span{
+				color: $BrandyPunch;
+				font-size: $fSizeGrande + 3px;
+				line-height: $fSizeGrande + 3px + 2px;
+				font-style:italic;
+				margin-bottom:15px;
+				padding-bottom:0px;
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+	&:nth-of-type(2n + 1), &:nth-of-type(5n + 1){
+		margin-left:50px;	
+	}
+	&:nth-of-type(5){
+		margin-left:0px;
+	}
+	&:nth-of-type(3n+1), &:first-of-type, &.busca{
+		width:100%;
+		height:181px;
+		margin-left:0px;
+		overflow:hidden;
+		figure{
+			width:355px;
+			height:181px;
+			margin-right:19px;
+			display:inline-block;
+		}
+		p{
+			display:inline-block;
+			@include calc (width, '100% - (355px + 19px)');
+		}
+	}
+	& + hr{
+			margin:50px 0;
+	}
+	&:hover{
+		img{
+			width: 110%;
+			left:-5%;
+		}
+	}
+}
+
+
+//anchors & buttons & forms
+@include input-placeholder {
+    color: $Gray;
+		font-weight:400;
+}
+
+@mixin inputPadrao ( $width, $height, $borderWidth, $borderWidth2){
+	width: $width;
+	height:$height;
+	padding:0px 20px;
+	background: $White;
+	border-width:$borderWidth;
+	border-color: $Black;
+	border-style:solid;
+	color: $OliveDrab;
+	font-weight:600;
+	font-size: $fSizePadrao + 1px;
+	@include transition(border 0.2s);
+	&:focus{
+		border-width:$borderWidth2;
+	}
+}
+
+@mixin btnPadrao ($width, $height) {
+	width: $width;
+	height:$height;
+	background-color: $Atlantis;
+	cursor:pointer;
+	border:0px;
+	padding:0px;
+	color: $White;
+	font-weight: bold;
+	font-size: $fSizePadrao;
+	@include transition (background 0.2s ease-in-out);
+	&:hover{
+		background-color: $OliveDrab;
+	}
+}
+
+@mixin btnTelevendas{
+	color: $White;
+	font-weight: 600;
+	font-size: $fSizePadrao;
+	text-transform:uppercase;
+	background: $MineShaft;
+	padding:0px 0px 0px 50px;
+	width:153px;
+	height:39px;
+	line-height:39px;
+	vertical-align:middle;
+	display:inline-block;
+	position:relative;
+	@include transition ($tranAll);
+	&:before{
+		content:'';
+		position:absolute;
+		width:23px;
+		height:24px;
+		top:8px;
+		left:17px;
+		@include sprite (-26px, 0px);
+	}
+	&:hover{
+		background: darken($MineShaft,  2.5%);
+	}
+}
+
+
+@mixin newsForm{
+	padding-top:38px;
+	label{
+		color: $Black;
+		font-size: $fSizeGrande + 2px;
+		line-height:  $fSizeGrande + 7px;
+		display:inline-block;
+		margin-right:50px;
+		vertical-align: middle;
+		span{
+			font-weight:600;
+			font-size:$fSizeMaior - 1.5px;
+			display:block;
+		}
+	}
+	input{
+		@include inputPadrao (284px, 47px, 1px, 3px);
+		margin-right:20px;
+	}
+	button{
+		@include btnPadrao (104px, 47px);
+	}
+}
+
+.breadCrumb{
+	width:100%;
+	padding-bottom:30px;
+	margin-bottom:30px;
+	border-bottom: 1px solid $Silver;
+	li{
+		display:inline-block;
+		position:relative;
+		color: $Black;
+		font-size: $fSizePadrao;
+		margin-left: 30px;
+		&:before{
+			content:'';
+			position:absolute;
+			display:block;
+			width:8px;
+			height:6px;
+			@include sprite (0px, -267px );
+			top:7px;
+			left: -15px;
+		}
+		&:first-child{
+			margin-left:0px;
+			&:before{
+				display:none;
+			}
+		}
+		a{
+			@include transition ($tranAll);
+			&:hover{
+				color: rgba($Black, 0.666);
+			}
+		}
+	}
+}
+
+.dataMaisSocial{
+	margin:30px 0px;
+	li{
+		font-size: $fSizePadrao + 1px;
+		margin-left:30px;
+		vertical-align: top;
+		display:inline-block;
+		overflow:hidden;
+		position:relative;
+		&:first-child{
+			margin-left:0px;
+			overflow:visible;
+			&:before{
+				content:'';
+				position:abosolute;
+				display:inline-block;
+				width:21px;
+				height:24px;
+				margin-top:-8px;
+				left:0;
+				margin-right:10px;
+				vertical-align: middle;
+				@include sprite (0px, -241px);
+			}
+		}
+		&:nth-child(3){
+			max-width:80px;
+		}
+	}
+}
+
+@mixin closePopUp ($size){
+	width:$size;
+	height:$size;
+	display:block;
+	border:2px solid $White;
+	background: $Tapa;
+	@include border-radius (50%);
+	color: $White;
+	font-weight:300;
+	font-size: $fSizeGigante + 6px;
+	text-align: center;
+	line-height: 40px;
+	cursor:pointer;
+	position:absolute;
+	top: -($size / 2);
+	right: -($size / 2);
+}
+
+
+//boxes
+
+@mixin headerNav{
+	ul{
+		width:$width-fix;
+		height:136px;
+		margin:0 auto;
+		position:relative;
+		overflow:hidden;
+		li{
+			width:20%;
+			height:100%;
+			border:1px solid $Silver;
+			border-right:0px;
+			display:inline-block;
+			text-align:center;
+			vertical-align: top;
+			overflow:hidden;
+			&:last-child{
+				border-right:1px solid $Silver;
+			}
+		}
+	}
+	ul li a{
+		display:block;
+		width:100%;
+		height:100%;
+		padding:80px 45px 0px;
+		color: $Black;
+		font-size: $fSizeGrande;
+		position:relative;
+		@include transition (background 0.2s ease-in-out);
+		&:before{
+			content:'';
+			position:absolute;
+			display:block;
+		}
+	}
+	
+	ul li:first-child a, 
+	ul li:nth-child(3) a,
+	ul li:last-child a{padding:90px 45px 0px;}
+	ul li a:hover{background: $WildSand;}	
+	
+	//1
+	ul li:first-child a:before{
+		width:63px;
+		height:51px;
+		@include sprite(-128px, -249px);
+		top:21px;
+		left:71px;
+	}
+	ul li:first-child a:hover:before{
+		@include sprite(-128px, -197px);
+	}
+	//2
+	ul li:nth-child(2) a:before{
+		width:61px;
+		height:37px;
+		@include sprite(-192px, -263px);
+		top:29px;
+		left:73px;
+	}
+	ul li:nth-child(2) a:hover:before{
+		@include sprite(-192px, -220px);
+	}	
+	//3
+	ul li:nth-child(3) a:before{
+		width:48px;
+		height:41px;
+		@include sprite(-254px, -259px);
+		top:27px;
+		left:79px;
+	}
+	ul li:nth-child(3) a:hover:before{
+		@include sprite(-254px, -216px);
+	}	
+	//4
+	ul li:nth-child(4) a:before{
+		width:44px;
+		height:41px;
+		@include sprite(-303px, -259px);
+		top:27px;
+		left:81px;
+	}
+	ul li:nth-child(4) a:hover:before{
+		@include sprite(-303px, -216px);
+	}
+	//5
+	ul li:last-child {
+		color: $White;
+		a{
+			background: $Atlantis;
+			&:hover{
+				background: $OliveDrab;
+			}
+		}
+	}
+	ul li:last-child a:before{
+		width:64px;
+		height:62px;
+		@include sprite(-349px, -254px);
+		top:25px;
+		left:74px;
+	}
+}
+
+@mixin headerNavMobile{
+	ul{
+		height:51px;
+		background: $White;
+	}
+	ul li a{
+		padding:9px 10px 9px 66px;
+		line-height: $fSizeGrande;
+		&:before{
+			zoom: 0.7;
+		}
+	}
+	
+	ul li:first-child a, 
+	ul li:nth-child(3) a,
+	ul li:last-child a{padding:17px 10px 9px 66px;}
+	
+	ul li:first-child a:before{top: 10px;  left: 30px;}
+	ul li:nth-child(2) a:before{top: 17px;  left: 32px;}
+	ul li:nth-child(3) a:before{top: 17px;  left: 35px;}
+	ul li:nth-child(4) a:before{top: 15px;  left: 35px; height:42px;}
+	ul li:last-child a:before{top: 13px;  left: 30px;}
+}
+
+@mixin pagination {
+	li{
+		color: $Black;
+		font-weight: 300;
+		font-size: $fSizeMaior + 3px;
+		display: inline-block;
+		margin:0px 15px;
+		vertical-align: middle;
+		&:hover{
+			color: $Atlantis;
+			font-weight: bold;
+		}
+	}
+	li:first-child, li:last-child{
+		@include sprite (0, -283px);
+		width:16px;
+		height:17px;
+		vertical-align:middle;
+		text-align:center;
+		margin:0;
+		margin-right:45px;
+		a{
+			text-indent:-9999px;
+			width:100%;
+			height:100%;
+			display:block;
+		}
+	}
+	li:last-child{
+		@include rotate(180);
+		margin-right:0px;
+		margin-left:45px;
+	}
+
+}
+
+
+div.newsForm{
+	@include newsForm;
+	top:0;
+	background-image: url(../images/pics/bg-news.jpg);
+	background-repeat: repeat-x;
+	height:66px;
+	width:100%;
+	padding-top: 15px;
+	form{
+		width: $width-fix;
+		margin:0 auto;
+	}
+	label{
+		margin-top:-5px;
+		font-size: $fSizeGrande;
+		margin-right:80px;
+		span{
+			font-size:$fSizeGrande + 2.3px;
+		}
+	}
+	input, button{
+		height:36px;
+		line-height:36px;
+	}
+}
+
+.popUpNews{
+	@include newsForm;
+	top:0;
+	z-index:30;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba($Black, 0.3);
+	padding-top: 0px;
+	a{
+		@include closePopUp (47px);
+	}
+	form{
+		background-image: url(../images/pics/bg-popup.jpg);
+		background-repeat: repeat;
+		width:854px;
+		height:226px;
+		top:50%;
+		left: 50%;
+		position:absolute;
+		margin-top: -(226px / 2);
+		margin-left: -(854px / 2);
+		padding:35px 120px;
+		text-align: center;
+	}
+	label{
+		font-size: $fSizeMaior - 2px;
+		margin-right:0px;
+		margin-bottom:20px;
+	}
+	input{
+		width:284px;
+		margin-right:0px;
+		& + input{
+			margin-left:20px;
+		}
+	}
+	button{
+		margin-top:20px;
+		width:164px;
+	}
+}
+
+@mixin comprarProduto{
+	width:100%;
+	height:277px;
+	border:1px solid $Silver;
+	position:relative;
+	@include transition ($tranAll);
+	&:hover{
+		border:3px solid $Silver;
+	}
+	a{
+		display:block;
+		width:100%;
+		height:100%;
+		padding: 30px;
+	}
+	img{
+		display:inline-block;
+		max-width: 235px;
+		height:auto;
+		position:absolute;
+		left:40px;
+		top:20px;
+	}
+	p, button{
+		display:block;
+		margin-left: 330px;
+	}
+	p:first-of-type{
+		color: $Emperor;
+		font-weight: bold;
+		font-size: $fSizeMaior + 3px;
+		margin-bottom:10px;
+		& + p{
+			color: $Atlantis;
+			font-weight:bold;
+			font-size: $fSizeGrande + 3px;
+			margin-bottom:15px;
+			span{
+				display:block;
+				color: $Black;
+				font-weight: 400;
+				font-size: $fSizePadrao - 1px;
+				text-decoration: line-through;
+			}
+		}
+	}
+	button{
+		@include btnPadrao(213px, 45px);
+		font-size: $fSizeGrande;
+	}
+}
+
+@mixin comentariosArea{
+	.tituloSec:after{
+		width:100%;
+	}
+	li{
+		margin-top:40px;
+		position:relative;
+		div{
+			margin-left:102px;
+			font-size: 15px;
+		}
+		span{
+			color: $BrandyPunch;
+			font-weight:bold;
+			&.comentado, &.respondido{
+				font-weight:400;
+				color: $Black;
+			}
+		}
+		p{
+			margin-top:10px;
+			padding:20px;
+			background: $WildSand;
+			font-size: $fSizePadrao;
+			@include border-radius (4px);
+			position:relative;
+			&:before{
+				content:'';
+				position:absolute;
+				display:block;
+				width: 0; 
+				height: 0; 
+				left:-10px;
+				top:13px;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent; 
+				border-right:10px solid $WildSand; 
+			}
+		}
+		button{
+			position:absolute;
+			top:80px;
+			padding:0;
+			border:0;
+			background:transparent;
+			font-size: $fSizePadrao - 1px;
+			cursor:pointer;
+			width:75px;
+			padding:5px;
+			@include border-radius (4px);
+			@include transition ($tranAll);
+			&:hover{
+				background: $WildSand;
+			}
+		}
+		img{
+			@include border-radius(50%);
+			position:absolute;
+			left:0;
+			top:0;
+			width:75px;
+			height:75px;
+		}
+		& > ol > li{
+			margin-left:35px;
+			button{
+				width:69px;
+				top: 74px;
+			}
+			img{
+				width:69px;
+				height:69px;
+			}
+		}
+	}
+	form{
+		margin-top:50px;
+		position:relative;
+		width:100%;
+		p{
+			font-weight: light;
+			font-size: $fSizeMaior - 2px;
+			margin-top:35px;
+		}
+		input{
+			@include inputPadrao (290px, 47px, 1px, 3px);
+			margin-top:20px;
+			display:block;
+		}
+		textarea{
+			@include inputPadrao (379px, 114px, 1px, 3px);
+			max-width:379px;
+			max-height:114px;
+			padding:10px;
+			margin-top:-114px;
+			float:right;
+			right:0;
+		}	
+		button{
+			@include btnPadrao (100%, 47px);
+			margin-top:20px;
+			font-size: $fSizeGrande + 3px;
+		}
+	}
+}

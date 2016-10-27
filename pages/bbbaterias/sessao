@@ -1,0 +1,16 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6720" startPos="251" endPos="251" selMode="0" lang="Javascript" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\library\js\scripts.js" backupFilePath="" originalFileLastModifTimestamp="1428003149" />
+            <File firstVisibleLine="25" xOffset="0" scrollWidth="6720" startPos="1292" endPos="1292" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\index.html" backupFilePath="" originalFileLastModifTimestamp="1428003709" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="6720" startPos="106" endPos="106" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\sass\partials\_variables.scss" backupFilePath="" originalFileLastModifTimestamp="1428004815" />
+            <File firstVisibleLine="13" xOffset="0" scrollWidth="6720" startPos="1229" endPos="1229" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\sass\partials\_reset.scss" backupFilePath="" originalFileLastModifTimestamp="1428004457" />
+        </mainView>
+        <subView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="828" startPos="187" endPos="187" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\sass\style.scss" backupFilePath="" originalFileLastModifTimestamp="1428006406" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="828" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\library\css\fonts\fonts.css" backupFilePath="" originalFileLastModifTimestamp="1428003014" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="828" startPos="202" endPos="202" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\sass\partials\_elementos.scss" backupFilePath="" originalFileLastModifTimestamp="1428003383" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="828" startPos="101" endPos="101" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\projects\mestre-bbbaterias\html\sass\partials\_hacks.scss" backupFilePath="" originalFileLastModifTimestamp="1426364036" />
+        </subView>
+    </Session>
+</NotepadPlus>

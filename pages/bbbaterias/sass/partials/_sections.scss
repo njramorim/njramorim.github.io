@@ -1,0 +1,736 @@
+//-----------------------------//
+//-------------body----------//
+//-----------------------------//
+
+body.decorado{
+	background-image: url('../images/pics/bg.jpg');
+	background-size: 100% auto;
+	background-position:center top;
+	background-repeat: no-repeat;
+	position:relative;
+	&:before{
+		content:'';
+		position:absolute;
+		width: $width-fix + 40px;
+		height:100%;
+		top:0;
+		left:50%;
+		margin-left: - (($width-fix + 40px) / 2);
+		background: $White;
+		z-index:-1;
+	}
+	& > header{
+		background: transparent;
+		position:relative;
+		&:before{
+			content:'';
+			position: absolute;
+			display: block;
+			top:0;
+			left:0;
+			width:100%;
+			height:155px;
+			background-color: $Black;
+		}
+		nav{
+			background:transparent;
+		}
+	}	
+	& > header.do-fix{
+		background: $WildSand;
+		position:fixed;
+		&:before{display:none;}
+	}
+}
+
+//-----------------------------//
+//-------------header----------//
+//-----------------------------//
+@mixin headerElements{
+	background: $Black;	
+
+	//header wrapper
+	& > div{
+		width:$width-fix;
+		position:relative;
+		margin: 0 auto;
+	}
+	
+	//header logo
+	& > div > h1, & > div > span.logo{
+		position:absolute;
+		@include sprite (0px, -98px);
+		width:319px;
+		height:83px;
+		top:31px;
+		a{
+			text-indent:-9999px;
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	}
+	
+	//header search e sociais
+	& > div > div{
+		margin-left:388px;
+		padding-top:64px;
+		padding-bottom:55px;
+		color: $White;
+		input{
+			@include inputPadrao(215px, 37px, 0px, 0px);
+			vertical-align:middle;
+		}
+		button{
+			@include btnPadrao(49px, 37px);
+			vertical-align:middle;
+			text-indent:-9999px;
+			margin-left:-4px;
+			position:relative;
+			&:before{
+				content:'';
+				position:absolute;
+				display:block;
+				width:24px;
+				height:22px;
+				@include sprite (0px, -1px);
+				top:8px;
+				left:13px;
+			}
+		}
+		& > a{
+			@include btnTelevendas;
+			margin-left:25px;
+			vertical-align:middle;
+		}
+		ul{
+			@include midiasSociais;
+			vertical-align:middle;
+			margin-left:25px;
+		}
+	}
+	
+	//header nav
+	& > nav{
+		width:100%;
+		min-width:$width-fix;
+		background: $White;
+		padding-top:28px;
+		@include headerNav;
+	}
+	
+	//header fixo
+	&.do-fix{
+		position:fixed;
+		background: $WildSand;
+		@include box-shadow ($sombraAbaixo);
+		z-index:20;
+		top:0;		
+		@include animation(desceHeader 0.4s ease-in-out);
+		//header logo
+		& > div > h1, & > div > span.logo{
+			@include sprite (0px, -301px);
+			width:231px;
+			height:51px;
+			top:12px;
+		}
+		
+		//header search e sociais
+		& > div > div{
+			padding-top:17px;
+			padding-bottom:17px;
+		}
+		
+		//header nav
+		& > nav{
+			background: $WildSand;
+			padding-top:0px;
+			padding-bottom:17px;
+			@include headerNavMobile;
+		}
+		
+		& + section{
+			margin-top: 340px;
+		}
+	}
+}
+
+.fixedForm{
+	position:fixed;
+	z-index:30;
+	a{
+		@include  closePopUp (30px);
+		font-size: $fSizeMaior + 2px;
+		line-height: $fSizeMaior + 3px;
+		 top: 36px;
+		right: -40px;
+	}
+	form{
+		position:relative;
+	}
+}
+.fixedForm + header{
+	margin-top:66px;
+}
+
+//-----------------------------//
+//-------------sections----------//
+//-----------------------------//
+
+.vitrine{
+	width:$width-fix;
+	margin:0 auto;
+	ul{
+		display:inline-block;
+		vertical-align:top;
+	}
+	//primeiro ul
+	ul:first-child{
+		width:672px; 
+		li{
+			width:326px;
+			height: 178px;
+			a{
+				display:block;
+				width:100%;
+				height:100%;
+			}
+			figure{
+				@include figureDestaque (326px, 178px);
+				img{
+					min-height:178px;
+				}
+			}
+		}
+		li:last-child{
+			margin-left:18px;
+		}
+	}
+	
+	//segundo ul
+	ul + ul{
+		float:right;
+		right:0;
+		width:336px;
+		li{
+			margin-top:20px;
+			width: 336px;
+			height: 178px;
+			figure{
+				@include figureDestaque (336px, 178px);
+			}
+			&:first-child{
+				margin-top:0px;
+			}
+		}
+	}
+	
+	//item maior
+	ul:first-child li:first-child {
+		width:672px;
+		height:376px;
+		margin-bottom:20px;
+		figure{
+			@include figureDestaque (672px, 376px);
+			figcaption{
+				font-size: $fSizeGigante + 1px;
+				line-height: $fSizeGigante + 1px + 5px;
+				left:30px;
+				bottom:30px;
+				span{
+					font-size:  $fSizeGrande + 1px;
+					line-height: $fSizeGrande + 1px;
+					padding-bottom:10px;
+					margin-bottom:5px;
+					&:after{
+						width:50px;
+					}
+				}
+			}
+		}
+		&:hover figure img{
+			width:110%;
+			left:-5%;
+		}
+	}
+	
+	//listas gerais
+	ul li{
+		display:inline-block;
+		&:hover figure img{
+			width:110%;
+			left:-5%;
+		}
+	}
+}
+
+ul.produtosLoja{
+	width:100%;
+	position:relative;
+	padding-bottom:50px;
+	border-bottom:1px solid $Silver;
+	li{
+		position:relative;
+		display:inline-block;
+		@include calc (width, '(100% / 5) - (19px - (19px / 5))');
+		height:256px;
+		border:1px solid $Silver;
+		overflow:hidden;
+		margin-left:19px;
+		@include transition ($tranAll);
+		&:first-child{
+			margin-left:0px;
+		}
+		&:hover{
+			border:3px solid $Silver;
+		}
+		a{
+			display:block;
+			width:100%;
+			height:100%;
+			padding:26px 19px;
+		}
+		img{
+			position:relative;
+			margin:0 auto;
+			display:block;
+		}
+		p{
+			position:absolute;
+			top:155px;
+			left:19px;
+			color:$Atlantis;
+			font-weight:bold;
+			font-size:$fSizeGrande + 3px;
+			text-align:left;
+			text-transform: uppercase;
+			@include calc( width, '100% - 38px');
+			overflow:hidden;
+			span{
+				color: $Black;
+				font-size: $fSizeMenor;
+				line-height: $fSizeMenor + 2px;
+				display:block;
+				margin-bottom:20px;
+				& + span{
+					font-weight:400;
+					font-size: $fSizePadrao - 1px;
+					margin-bottom:5px;
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+}
+
+
+ul.postagens{
+	position:relative;
+	vertical-align: top;
+	& > li{
+		@include postagens;
+	}
+}
+
+.menor > aside{
+	a{
+		display:block;
+		margin-bottom:20px;
+		& ~ a:last-of-type{
+			margin-bottom:0px;
+		}
+	}
+	.tituloSec{
+		margin-top:20px;
+		display:inline-block;
+	}
+}
+
+.menor  aside  ul.produtosLoja{
+	border:0px;
+	padding:0px;
+	li{
+		display:block;
+		width: 100%;
+		height: 106px;
+		margin-left:0px;
+		margin-top:18px;
+		&:first-child{
+			margin-top:0px;
+		}
+		a{
+			padding:20px 15px;
+		}
+		img{
+			margin:0;
+			width:33%;
+			height:auto;
+			display:inline-block;
+		}
+		p{
+			top:20px;
+			left:110px;
+			width:145px;
+			span{
+				margin-bottom:6px;
+				& + span{
+					margin-bottom:2px;
+				}
+			}
+		}
+	}
+}
+
+ul.pagination{
+	text-align: center;
+	@include pagination;
+}
+
+//404
+div.erro{
+	margin-top:110px;
+	font-weight: 300;
+	.bateria{
+		margin:0 auto;
+		margin-bottom:90px;
+	}	
+	& > p{
+		font-size: $fSizeGigante + 40px;
+		text-align:center;
+		margin-bottom:60px;
+		@include animation-name (showTextos);
+		@include animation-duration (3.8s);
+		span{
+			display:block;
+			font-size: $fSizeGigante - 2px;
+		}
+	}
+	form{
+		text-align: center;
+		@include animation-name (showTextos);
+		@include animation-duration (3.8s);
+		label{
+			font-size: $fSizeMaior + 3px;
+			display:block;
+			margin-bottom:20px;
+		}
+		input{
+			@include inputPadrao (425px, 47px, 1px, 3px);
+			vertical-align: top;
+		}
+		button{
+			@include btnPadrao (63px, 47px);
+			vertical-align: top;
+			margin-left:-5px;
+			text-indent:-9999px;
+			position:relative;
+			&:before{
+				content:'';
+				position:absolute;
+				display:block;
+				width:24px;
+				height:22px;
+				@include sprite (0px, -1px);
+				top:12px;
+				left:19px;
+			}
+		}
+		p{
+			margin-top:30px;
+			font-size: $fSizeMaior - 2px;
+			a{
+				color: $BrandyPunch;
+				font-weight:bold;
+				@include transition ($tranAll);
+				&:hover{
+					color: darken($BrandyPunch, 10%);
+				}
+			}
+		}
+	}
+}
+
+//postagens
+
+section.post{
+	& > *{
+		margin-bottom:35px;
+	}
+	& > img{
+		max-width:100%;
+		height:auto;
+	}
+	& > p{
+		font-size: $fSizeGrande;
+		line-height: $fSizeMaior + 1px;
+	}
+	& > .comprarProduto{
+		@include comprarProduto;
+	}
+	h2, h3, h4, h5, h6{
+		color: $BrandyPunch;
+		font-size: $fSizeGigante + 3px;
+		font-weight:600;
+		font-style:italic;
+	}
+	h3{font-size: $fSizeGigante - 2px;}
+	h4{font-size: $fSizeMaior + 3px;}
+	h5{font-size: $fSizeMaior - 2px;}
+	h6{font-size:$fSizeGrande - 1px;}
+	
+	ul:not(.dataMaisSocial), ol{
+		li{
+			font-size: $fSizeGrande;
+			line-height: $fSizeMaior + 1px;
+			margin-left:13px;
+			display:block;
+			position:relative;
+		}
+	}
+	ul:not(.dataMaisSocial){
+		li:before{
+			content:'';
+			position:absolute;
+			display:block;
+			width:6px;
+			height:6px;
+			@include border-radius (50%);
+			background: $BrandyPunch;
+			left:-13px;
+			margin-top:8px;
+		}
+	}
+	ol{
+		li{
+			counter-increment: c;
+			margin-bottom:5px;
+			&:before{
+			 content: counter(c,decimal)'.';
+			 color: $BrandyPunch;
+			 font-weight:bold;
+			 font-size: $fSizeGrande + 2px;
+			 margin-left:-13px;
+			 margin-right:13px;
+			}
+		}
+	}
+	blockquote{
+		font-size: $fSizeGrande;
+		line-height: $fSizeMaior + 1px;
+		padding-left: 11px;
+		border-left: 2px solid $BrandyPunch;
+	}
+}
+
+section.comentarios{
+	padding-top:40px;
+	@include comentariosArea;
+}
+
+section.post ~ ul.postagens{
+	margin-top:55px;
+	.tituloSec{
+		margin-bottom:30px;
+	}
+	li.small{
+		width:305px;
+		height:370px;
+		& + li{
+			margin-left:70px;
+		}
+		figure{
+			width:100%;
+			height:181px;
+		}
+		p{
+			width:100%;
+		}		
+	}
+}
+
+section.post > .popUpNews {
+	position:relative;
+	height:135px;
+	background:transparent;
+	z-index:1;
+	form{
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		margin:0;
+		position:relative;
+		padding:20px;
+		label{
+			display:block;
+			margin-bottom:0px;
+		}
+		input{
+			width:250px;
+			& + input{
+				margin-left: 15px;
+			}
+		}
+		button{
+			width:110px;
+			margin-left:15px;
+		}
+	}
+}
+
+//-----------------------------//
+//-------------footer----------//
+//-----------------------------//
+
+footer form{
+	@include newsForm;
+}
+
+//footer parta 2
+footer div{
+	padding-top:88px;
+	position:relative;
+	//logo
+	a[alt=BBBaterias]{
+		width:188px;
+		height:73px;
+		@include sprite (-212px, -24px);
+		display:inline-block;
+		text-indent:-9999px;
+		top:62px + 88px;
+		position:absolute;
+		float:left;
+		left:0;
+	}
+	
+	//listas gerais
+	& > ul{
+		display:inline-block;
+		vertical-align:top;
+		margin-left:45px;
+		p.tituloSec{
+			margin-bottom:25px;
+			font-weight: bold;
+			font-size: $fSizeGrande + 2px;
+			&:after{
+				width:50px;
+			}
+			& ~ ul p{
+				margin-top:30px;
+			}
+		}
+		//itens gerais
+		li{ 
+			margin-bottom:7px;
+			position: relative;
+			a{
+				font-size: $fSizeGrande;
+				color: $Black;
+				padding-left:16px;
+				&:before{
+					content:'';
+					position:absolute;
+					display:block;
+					width:7px;
+					height:8px;
+					@include sprite(0, -274px);
+					top:7px;
+					left:0px;
+					@include transition ($tranAll);
+				}
+				&:hover{
+					font-weight: bold;
+					&:before{
+						left:3px;
+					}
+				}
+			}
+		}
+	}
+	
+	//lista 1
+	& > ul:first-of-type{
+		margin-left:265px;
+		width:210px;
+		//lista2
+		& + ul{ 
+			width:300px;
+		}
+	}
+	
+	//lita 2 item 1
+	& > ul:nth-of-type(2) > li:first-of-type a{
+		padding-left:30px;
+		&:before{
+			@include sprite (-50px, 0px);
+			width:20px;
+			height:14px;
+			top:5px;
+		}
+	}
+	
+	//lista 2 items sociais
+	& > ul:nth-of-type(2) > ul{
+		@include midiasSociais;
+		li a:before{
+			display:none;
+		}
+		li:first-of-type{
+			margin-left:0px;
+		}
+	}
+	
+	& > ul:last-of-type{
+		li:first-of-type a:before{content:'SP';}
+		li:nth-of-type(2) a:before{content:'RJ';}
+		li:nth-of-type(3) a:before{content:'MG';}
+		li:nth-of-type(4) a:before{content:'RS';}
+		li a:before{
+			color: $White;
+			font-size: $fSizePadrao - 1px;
+			font-weight: 400;
+			text-align:center;
+			text-transform:uppercase;
+			background-image:none;
+			background-color: $NaturalGray;
+			width:24px;
+			height:24px;
+			line-height:24px;
+			@include border-radius (2px);
+			position:relative;
+			display:inline-block;
+			top:1px;
+			margin-left:-10px;
+			margin-right:10px;
+		}
+		li a:hover:before{
+			left:0px;
+		}
+	}
+	
+	hr{
+		margin-top:40px;
+		margin-bottom:20px;
+	}
+	
+	& > span{
+		font-size:$fSizePadrao;
+		font-weight: 300;
+		color: $Black;
+		+ a{
+			float:right;
+			right:0;
+			position:absolute;
+			display:block;
+			text-indent:-9999px;
+			@include sprite (-91px, 0px);
+			width:121px;
+			height:23px;
+			margin-top:-20px;
+			@include transition ($tranAll);
+			&:hover{
+				@include opacity (0.8);
+			}
+		}
+	}
+}
