@@ -1,0 +1,139 @@
+{
+  "items": [
+    { "title": "Sandália Ferracini Ecologic",
+      "price": 95.92,
+      "priceOld": null,
+      "priceX": { 
+        "times": 4,
+        "value": 23.98
+      },
+      "discount": 43.98,
+      "rate": 4,
+      "image": {
+        "default": "calcado1.png",
+        "hover": "calcado1_hover.png",
+        "zoom": "calcado1_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Chinelo Kildare",
+      "price": 79.92,
+      "priceOld": 99.90,
+      "priceX": { 
+        "times": 3,
+        "value": 26.64
+      },
+      "discount": 19.98,
+      "rate": 4,
+      "image": {
+        "default": "calcado2.png",
+        "hover": "calcado2_hover.png",
+        "zoom": "calcado2_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Tênis Ferracini Week",
+      "price": 183.92,
+      "priceOld": 229.90,
+      "priceX": { 
+        "times": 9,
+        "value": 20.43
+      },
+      "discount": 45.98,
+      "rate": 5,
+      "image": {
+        "default": "calcado3.png",
+        "hover": "calcado3_hover.png",
+        "zoom": "calcado3_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Tênis Democrata Fan",
+      "price": 159.92,
+      "priceOld": 219.90,
+      "priceX": { 
+        "times": 7,
+        "value": 22.84
+      },
+      "discount": 59.98,
+      "rate": 3,
+      "image": {
+        "default": "calcado4.png",
+        "hover": "calcado4_hover.png",
+        "zoom": "calcado4_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Sandália Ferracini Ecologic 2",
+      "price": 95.92,
+      "priceOld": null,
+      "priceX": { 
+        "times": 4,
+        "value": 23.98
+      },
+      "discount": 43.98,
+      "rate": 5,
+      "image": {
+        "default": "calcado1.png",
+        "hover": "calcado1_hover.png",
+        "zoom": "calcado1_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Chinelo Kildare 2",
+      "price": 79.92,
+      "priceOld": 99.90,
+      "priceX": { 
+        "times": 3,
+        "value": 26.64
+      },
+      "discount": 19.98,
+      "rate": 2,
+      "image": {
+        "default": "calcado2.png",
+        "hover": "calcado2_hover.png",
+        "zoom": "calcado2_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Tênis Ferracini Week 2",
+      "price": 183.92,
+      "priceOld": 229.90,
+      "priceX": { 
+        "times": 9,
+        "value": 20.43
+      },
+      "discount": 45.98,
+      "rate": 0,
+      "image": {
+        "default": "calcado3.png",
+        "hover": "calcado3_hover.png",
+        "zoom": "calcado3_zoom.png" 
+      },
+      "url": "#home"
+    },
+    { "title": "Tênis Democrata Fan 2",
+      "price": 159.92,
+      "priceOld": 219.90,
+      "priceX": { 
+        "times": 7,
+        "value": 22.84
+      },
+      "discount": 59.98,
+      "rate": 1,
+      "image": {
+        "default": "calcado4.png",
+        "hover": "calcado4_hover.png",
+        "zoom": "calcado4_zoom.png" 
+      },
+      "url": "#home"
+    }
+  ],
+
+  "currency": "R$",
+
+  "nav": {
+    "arrow": true,
+    "dot": false
+  }
+}
